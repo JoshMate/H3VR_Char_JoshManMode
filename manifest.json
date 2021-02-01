@@ -1,0 +1,14 @@
+﻿{
+  "guid": "h3vr.tnhtweaker.JoshManMode",
+  "version": "0.1.2.0",
+  "dependencies": {
+      "h3vr.tnhtweaker.deli": "0.1.4.0"
+  },
+  "name": "JoshManMode",
+  "authors": [ 
+    "Josh Mate" 
+  ],
+  "runtime": {
+    "JoshManMode/": "Character"
+  }
+}
