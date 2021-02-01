@@ -1,15 +1,15 @@
 ﻿{
   "DisplayName": "Josh Man Mode",
-  "Description": "A mix of Zombie foes and regular foes which slowly builds up to a Hold 7 Boss fight agains the Pac Squads. Uses Ricky-Dicky-Random Progression (Works in both Standard and Endless) (Heavily modified for JoshMate's prefferences)",
+  "Description": "A mix of Zombie foes and regular foes which slowly builds up to a Hold 8 Boss fight agains the Pac Squads. Uses Ricky-Dicky-Random Progression (Works in both Standard and Endless) (Designed to be played on 10k HP and Limited ammo)",
   "CharacterID": 11,
   "CharacterGroup": 0,
   "TableID": "DD_C03",
   "CharacterIconName": "TNH_CHARACTER_JOSHMATE",
-  "StartingTokens": 6,
+  "StartingTokens": 3,
   "ForceAllAgentWeapons": false,
   "ForceDisableOutfitFunctionality": false,
   "UsesPurchasePriceIncrement": false,
-  "HasPrimaryWeapon": true,
+  "HasPrimaryWeapon": false,
   "HasSecondaryWeapon": false,
   "HasTertiaryWeapon": true,
   "HasPrimaryItem": false,
@@ -37,8 +37,8 @@
     "TNH"
   ],
   "PrimaryWeapon": {
-    "NumMags": 4,
-    "NumRounds": 40,
+    "NumMags": 0,
+    "NumRounds": 0,
     "AmmoOverride": null,
     "Tables": [],
     "ListOverride": []
@@ -54,41 +54,15 @@
     "NumMags": 0,
     "NumRounds": 0,
     "AmmoOverride": null,
-    "Tables": [
-      {
-        "Category": "MeleeWeapon",
-        "ItemsToSpawn": 1,
-        "MinAmmoCapacity": -1,
-        "MaxAmmoCapacity": -1,
-        "NumMagsSpawned": 4,
-        "NumRoundsSpawned": 40,
-        "BespokeAttachmentChance": 0.5,
-        "RequiredExactCapacity": -1,
-        "IsBlanked": false,
-        "IsCompatibleMagazine": false,
-        "SpawnsInSmallCase": false,
-        "SpawnsInLargeCase": false,
-        "UseIDOverride": false,
-        "IDOverride": [],
-        "Eras": [],
-        "Sets": [],
-        "Sizes": [],
-        "Actions": [],
-        "Modes": [],
-        "ExcludedModes": [],
-        "FeedOptions": [],
-        "MountsAvailable": [],
-        "RoundPowers": [],
-        "Features": [],
-        "MeleeStyles": [],
-        "MeleeHandedness": [],
-        "MountTypes": [],
-        "PowerupTypes": [],
-        "ThrownTypes": [],
-        "ThrownDamageTypes": []
-      }
-    ],
-    "ListOverride": []
+    "Tables": [],
+    "ListOverride": [
+      "GarageTool_HandAxe",
+      "Improvised_Cleaver",
+      "Hammer",
+      "GarageTool_WrenchTwoSided",
+      "FarmTool_Sickle",
+      "Crowbar"
+    ]
   },
   "PrimaryItem": {
     "NumMags": 0,
@@ -120,7 +94,7 @@
   },
   "RequireSightTable": {
     "Category": "Attachment",
-    "ItemsToSpawn": 0,
+    "ItemsToSpawn": 1,
     "MinAmmoCapacity": -1,
     "MaxAmmoCapacity": -1,
     "NumMagsSpawned": 4,
@@ -145,7 +119,7 @@
     "MountsAvailable": [],
     "RoundPowers": [],
     "Features": [
-      "Reflex"
+      "IronSight"
     ],
     "MeleeStyles": [],
     "MeleeHandedness": [],
@@ -261,7 +235,7 @@
       "Tables": [
         {
           "Category": "Thrown",
-          "ItemsToSpawn": 1,
+          "ItemsToSpawn": 2,
           "MinAmmoCapacity": -1,
           "MaxAmmoCapacity": -1,
           "NumMagsSpawned": 4,
@@ -296,216 +270,25 @@
   ],
   "Levels": [
     {
-      "NumOverrideTokensForHold": 5,
-      "MinSupplyPoints": 1,
-      "MaxSupplyPoints": 1,
-      "MinConstructors": 1,
-      "MaxConstructors": 1,
-      "MinPanels": 2,
-      "MaxPanels": 2,
-      "MinBoxesSpawned": 2,
-      "MaxBoxesSpawned": 4,
-      "MinTokensPerSupply": 0,
-      "MaxTokensPerSupply": 3,
-      "BoxTokenChance": 0.50,
-      "BoxHealthChance": 0.50,
-      "PossiblePanelTypes": [
-        "AmmoReloader",
-        "Recycler"
-      ],
-      "TakeChallenge": {
-        "TurretType": "SMG",
-        "EnemyType": "RWP_Skulker_Pistol",
-        "NumTurrets": 0,
-        "NumGuards": 2,
-        "IFFUsed": 1
-      },
-      "HoldPhases": [
-        {
-          "Encryptions": [
-            "Static"
-          ],
-          "MinTargets": 1,
-          "MaxTargets": 1,
-          "MinTargetsLimited": 1,
-          "MaxTargetsLimited": 1,
-          "EnemyType": [
-            "RWP_Skulker_Pistol"
-          ],
-          "LeaderType": "RWP_Skulker_Pistol",
-          "MinEnemies": 2,
-          "MaxEnemies": 2,
-          "MaxEnemiesAlive": 4,
-          "MaxDirections": 1,
-          "SpawnCadence": 20.0,
-          "ScanTime": 30.0,
-          "WarmupTime": 7.0,
-          "IFFUsed": 1,
-          "GrenadeChance": 0.0,
-          "GrenadeType": "Sosiggrenade_Flash",
-          "SwarmPlayer": false
-        }
-      ],
-      "SupplyChallenge": {
-        "TurretType": "SMG",
-        "EnemyType": "RWP_Skulker_Pistol",
-        "NumTurrets": 0,
-        "NumGuards": 1,
-        "IFFUsed": 1
-      },
-      "Patrols": [
-        {
-          "EnemyType": [
-            "RWP_Skulker_Pistol"
-          ],
-          "LeaderType": "RWP_Skulker_Pistol",
-          "PatrolSize": 2,
-          "MaxPatrols": 1,
-          "MaxPatrolsLimited": 1,
-          "PatrolCadence": 30.0,
-          "PatrolCadenceLimited": 30.0,
-          "IFFUsed": 1,
-          "SwarmPlayer": false,
-          "AssualtSpeed": "Walking",
-          "IsBoss": false,
-          "DropChance": 0.50,
-          "DropsHealth": true
-        },
-        {
-          "EnemyType": [
-            "RW_Rot"
-          ],
-          "LeaderType": "RW_Floater",
-          "PatrolSize": 2,
-          "MaxPatrols": 1,
-          "MaxPatrolsLimited": 1,
-          "PatrolCadence": 30.0,
-          "PatrolCadenceLimited": 30.0,
-          "IFFUsed": 3,
-          "SwarmPlayer": false,
-          "AssualtSpeed": "Walking",
-          "IsBoss": false,
-          "DropChance": 0.50,
-          "DropsHealth": true
-        }
-      ]
-    }, 
-    {
-      "NumOverrideTokensForHold": 6,
-      "MinSupplyPoints": 1,
-      "MaxSupplyPoints": 1,
-      "MinConstructors": 1,
-      "MaxConstructors": 1,
-      "MinPanels": 2,
-      "MaxPanels": 2,
-      "MinBoxesSpawned": 2,
-      "MaxBoxesSpawned": 4,
-      "MinTokensPerSupply": 0,
-      "MaxTokensPerSupply": 3,
-      "BoxTokenChance": 0.50,
-      "BoxHealthChance": 0.50,
-      "PossiblePanelTypes": [
-        "AmmoReloader",
-        "Recycler"
-      ],
-      "TakeChallenge": {
-        "TurretType": "SMG",
-        "EnemyType": "RWP_Skulker_Pistol",
-        "NumTurrets": 0,
-        "NumGuards": 4,
-        "IFFUsed": 1
-      },
-      "HoldPhases": [
-        {
-          "Encryptions": [
-            "Static"
-          ],
-          "MinTargets": 1,
-          "MaxTargets": 1,
-          "MinTargetsLimited": 1,
-          "MaxTargetsLimited": 1,
-          "EnemyType": [
-            "RWP_Skulker_Pistol"
-          ],
-          "LeaderType": "RWP_Skulker_Pistol",
-          "MinEnemies": 4,
-          "MaxEnemies": 4,
-          "MaxEnemiesAlive": 8,
-          "MaxDirections": 2,
-          "SpawnCadence": 20.0,
-          "ScanTime": 60.0,
-          "WarmupTime": 7.0,
-          "IFFUsed": 1,
-          "GrenadeChance": 0.0,
-          "GrenadeType": "Sosiggrenade_Flash",
-          "SwarmPlayer": false
-        }
-      ],
-      "SupplyChallenge": {
-        "TurretType": "SMG",
-        "EnemyType": "RWP_Skulker_Pistol",
-        "NumTurrets": 0,
-        "NumGuards": 2,
-        "IFFUsed": 1
-      },
-      "Patrols": [
-        {
-          "EnemyType": [
-            "RWP_Skulker_Pistol"
-          ],
-          "LeaderType": "RWP_Skulker_Pistol",
-          "PatrolSize": 3,
-          "MaxPatrols": 2,
-          "MaxPatrolsLimited": 2,
-          "PatrolCadence": 30.0,
-          "PatrolCadenceLimited": 30.0,
-          "IFFUsed": 1,
-          "SwarmPlayer": false,
-          "AssualtSpeed": "Walking",
-          "IsBoss": false,
-          "DropChance": 0.50,
-          "DropsHealth": true
-        },
-        {
-          "EnemyType": [
-            "RW_Rot"
-          ],
-          "LeaderType": "RW_Floater",
-          "PatrolSize": 3,
-          "MaxPatrols": 2,
-          "MaxPatrolsLimited": 2,
-          "PatrolCadence": 30.0,
-          "PatrolCadenceLimited": 30.0,
-          "IFFUsed": 3,
-          "SwarmPlayer": false,
-          "AssualtSpeed": "Walking",
-          "IsBoss": false,
-          "DropChance": 0.50,
-          "DropsHealth": true
-        }
-      ]
-    }, 
-    {
       "NumOverrideTokensForHold": 7,
       "MinSupplyPoints": 1,
       "MaxSupplyPoints": 1,
       "MinConstructors": 1,
       "MaxConstructors": 1,
-      "MinPanels": 2,
-      "MaxPanels": 2,
+      "MinPanels": 1,
+      "MaxPanels": 1,
       "MinBoxesSpawned": 2,
-      "MaxBoxesSpawned": 4,
+      "MaxBoxesSpawned": 5,
       "MinTokensPerSupply": 0,
-      "MaxTokensPerSupply": 3,
+      "MaxTokensPerSupply": 4,
       "BoxTokenChance": 0.50,
       "BoxHealthChance": 0.50,
       "PossiblePanelTypes": [
-        "AmmoReloader",
         "Recycler"
       ],
       "TakeChallenge": {
         "TurretType": "SMG",
-        "EnemyType": "RWP_Skulker_Rifler",
+        "EnemyType": "MountainMeat_Melee",
         "NumTurrets": 0,
         "NumGuards": 3,
         "IFFUsed": 1
@@ -520,13 +303,297 @@
           "MinTargetsLimited": 1,
           "MaxTargetsLimited": 1,
           "EnemyType": [
-            "RWP_Skulker_Pistol",
-            "RWP_Skulker_Rifler"
+            "MountainMeat_Melee"
           ],
-          "LeaderType": "RWP_Skulker_Rifler",
+          "LeaderType": "MountainMeat_Melee",
+          "MinEnemies": 1,
+          "MaxEnemies": 1,
+          "MaxEnemiesAlive": 3,
+          "MaxDirections": 1,
+          "SpawnCadence": 10.0,
+          "ScanTime": 30.0,
+          "WarmupTime": 7.0,
+          "IFFUsed": 1,
+          "GrenadeChance": 0.0,
+          "GrenadeType": "Sosiggrenade_Flash",
+          "SwarmPlayer": false
+        }
+      ],
+      "SupplyChallenge": {
+        "TurretType": "SMG",
+        "EnemyType": "MountainMeat_Melee",
+        "NumTurrets": 0,
+        "NumGuards": 1,
+        "IFFUsed": 1
+      },
+      "Patrols": [
+        {
+          "EnemyType": [
+            "MountainMeat_Melee"
+          ],
+          "LeaderType": "MountainMeat_Melee",
+          "PatrolSize": 1,
+          "MaxPatrols": 2,
+          "MaxPatrolsLimited": 2,
+          "PatrolCadence": 25.0,
+          "PatrolCadenceLimited": 25.0,
+          "IFFUsed": 1,
+          "SwarmPlayer": false,
+          "AssualtSpeed": "Walking",
+          "IsBoss": false,
+          "DropChance": 0.50,
+          "DropsHealth": true
+        },
+        {
+          "EnemyType": [
+            "RW_Rot"
+          ],
+          "LeaderType": "RW_Rot",
+          "PatrolSize": 1,
+          "MaxPatrols": 2,
+          "MaxPatrolsLimited": 2,
+          "PatrolCadence": 25.0,
+          "PatrolCadenceLimited": 25.0,
+          "IFFUsed": 3,
+          "SwarmPlayer": false,
+          "AssualtSpeed": "Walking",
+          "IsBoss": false,
+          "DropChance": 0.50,
+          "DropsHealth": true
+        }
+      ]
+    },
+    {
+      "NumOverrideTokensForHold": 7,
+      "MinSupplyPoints": 1,
+      "MaxSupplyPoints": 1,
+      "MinConstructors": 1,
+      "MaxConstructors": 1,
+      "MinPanels": 1,
+      "MaxPanels": 1,
+      "MinBoxesSpawned": 2,
+      "MaxBoxesSpawned": 5,
+      "MinTokensPerSupply": 0,
+      "MaxTokensPerSupply": 4,
+      "BoxTokenChance": 0.50,
+      "BoxHealthChance": 0.50,
+      "PossiblePanelTypes": [
+        "Recycler"
+      ],
+      "TakeChallenge": {
+        "TurretType": "SMG",
+        "EnemyType": "MountainMeat_Melee",
+        "NumTurrets": 0,
+        "NumGuards": 3,
+        "IFFUsed": 1
+      },
+      "HoldPhases": [
+        {
+          "Encryptions": [
+            "Static"
+          ],
+          "MinTargets": 1,
+          "MaxTargets": 1,
+          "MinTargetsLimited": 1,
+          "MaxTargetsLimited": 1,
+          "EnemyType": [
+            "MountainMeat_Melee",
+            "MountainMeat_Pistol"
+          ],
+          "LeaderType": "MountainMeat_Pistol",
+          "MinEnemies": 2,
+          "MaxEnemies": 2,
+          "MaxEnemiesAlive": 4,
+          "MaxDirections": 1,
+          "SpawnCadence": 15.0,
+          "ScanTime": 60.0,
+          "WarmupTime": 7.0,
+          "IFFUsed": 1,
+          "GrenadeChance": 0.0,
+          "GrenadeType": "Sosiggrenade_Flash",
+          "SwarmPlayer": false
+        }
+      ],
+      "SupplyChallenge": {
+        "TurretType": "SMG",
+        "EnemyType": "MountainMeat_Melee",
+        "NumTurrets": 0,
+        "NumGuards": 3,
+        "IFFUsed": 1
+      },
+      "Patrols": [
+        {
+          "EnemyType": [
+            "MountainMeat_Melee"
+          ],
+          "LeaderType": "MountainMeat_Melee",
+          "PatrolSize": 2,
+          "MaxPatrols": 3,
+          "MaxPatrolsLimited": 3,
+          "PatrolCadence": 25.0,
+          "PatrolCadenceLimited": 25.0,
+          "IFFUsed": 1,
+          "SwarmPlayer": false,
+          "AssualtSpeed": "Walking",
+          "IsBoss": false,
+          "DropChance": 0.50,
+          "DropsHealth": true
+        },
+        {
+          "EnemyType": [
+            "RW_Rot"
+          ],
+          "LeaderType": "RW_Rot",
+          "PatrolSize": 2,
+          "MaxPatrols": 3,
+          "MaxPatrolsLimited": 3,
+          "PatrolCadence": 25.0,
+          "PatrolCadenceLimited": 25.0,
+          "IFFUsed": 3,
+          "SwarmPlayer": false,
+          "AssualtSpeed": "Walking",
+          "IsBoss": false,
+          "DropChance": 0.50,
+          "DropsHealth": true
+        }
+      ]
+    },
+    {
+      "NumOverrideTokensForHold": 8,
+      "MinSupplyPoints": 1,
+      "MaxSupplyPoints": 1,
+      "MinConstructors": 1,
+      "MaxConstructors": 1,
+      "MinPanels": 1,
+      "MaxPanels": 1,
+      "MinBoxesSpawned": 2,
+      "MaxBoxesSpawned": 5,
+      "MinTokensPerSupply": 0,
+      "MaxTokensPerSupply": 4,
+      "BoxTokenChance": 0.50,
+      "BoxHealthChance": 0.50,
+      "PossiblePanelTypes": [
+        "Recycler"
+      ],
+      "TakeChallenge": {
+        "TurretType": "SMG",
+        "EnemyType": "MountainMeat_Pistol",
+        "NumTurrets": 0,
+        "NumGuards": 3,
+        "IFFUsed": 1
+      },
+      "HoldPhases": [
+        {
+          "Encryptions": [
+            "Static"
+          ],
+          "MinTargets": 1,
+          "MaxTargets": 1,
+          "MinTargetsLimited": 1,
+          "MaxTargetsLimited": 1,
+          "EnemyType": [
+            "MountainMeat_Melee",
+            "MountainMeat_Pistol"
+          ],
+          "LeaderType": "MountainMeat_Pistol",
           "MinEnemies": 3,
           "MaxEnemies": 3,
           "MaxEnemiesAlive": 6,
+          "MaxDirections": 1,
+          "SpawnCadence": 20.0,
+          "ScanTime": 60.0,
+          "WarmupTime": 7.0,
+          "IFFUsed": 1,
+          "GrenadeChance": 0.0,
+          "GrenadeType": "Sosiggrenade_Flash",
+          "SwarmPlayer": false
+        }
+      ],
+      "SupplyChallenge": {
+        "TurretType": "SMG",
+        "EnemyType": "MountainMeat_Pistol",
+        "NumTurrets": 0,
+        "NumGuards": 3,
+        "IFFUsed": 1
+      },
+      "Patrols": [
+        {
+          "EnemyType": [
+            "MountainMeat_Melee",
+            "MountainMeat_Pistol"
+          ],
+          "LeaderType": "MountainMeat_Pistol",
+          "PatrolSize": 3,
+          "MaxPatrols": 3,
+          "MaxPatrolsLimited": 3,
+          "PatrolCadence": 25.0,
+          "PatrolCadenceLimited": 25.0,
+          "IFFUsed": 1,
+          "SwarmPlayer": false,
+          "AssualtSpeed": "Walking",
+          "IsBoss": false,
+          "DropChance": 0.50,
+          "DropsHealth": true
+        },
+        {
+          "EnemyType": [
+            "RW_Rot"
+          ],
+          "LeaderType": "RW_Floater",
+          "PatrolSize": 3,
+          "MaxPatrols": 3,
+          "MaxPatrolsLimited": 3,
+          "PatrolCadence": 25.0,
+          "PatrolCadenceLimited": 25.0,
+          "IFFUsed": 3,
+          "SwarmPlayer": false,
+          "AssualtSpeed": "Walking",
+          "IsBoss": false,
+          "DropChance": 0.50,
+          "DropsHealth": true
+        }
+      ]
+    },
+    {
+      "NumOverrideTokensForHold": 8,
+      "MinSupplyPoints": 1,
+      "MaxSupplyPoints": 1,
+      "MinConstructors": 1,
+      "MaxConstructors": 1,
+      "MinPanels": 1,
+      "MaxPanels": 1,
+      "MinBoxesSpawned": 2,
+      "MaxBoxesSpawned": 5,
+      "MinTokensPerSupply": 0,
+      "MaxTokensPerSupply": 4,
+      "BoxTokenChance": 0.50,
+      "BoxHealthChance": 0.50,
+      "PossiblePanelTypes": [
+        "Recycler"
+      ],
+      "TakeChallenge": {
+        "TurretType": "SMG",
+        "EnemyType": "MountainMeat_SMG",
+        "NumTurrets": 0,
+        "NumGuards": 3,
+        "IFFUsed": 1
+      },
+      "HoldPhases": [
+        {
+          "Encryptions": [
+            "Static"
+          ],
+          "MinTargets": 1,
+          "MaxTargets": 1,
+          "MinTargetsLimited": 1,
+          "MaxTargetsLimited": 1,
+          "EnemyType": [
+            "MountainMeat_Pistol"
+          ],
+          "LeaderType": "MountainMeat_SMG",
+          "MinEnemies": 4,
+          "MaxEnemies": 4,
+          "MaxEnemiesAlive": 8,
           "MaxDirections": 2,
           "SpawnCadence": 20.0,
           "ScanTime": 90.0,
@@ -539,22 +606,22 @@
       ],
       "SupplyChallenge": {
         "TurretType": "SMG",
-        "EnemyType": "RWP_Skulker_Pistol",
+        "EnemyType": "MountainMeat_Pistol",
         "NumTurrets": 0,
-        "NumGuards": 1,
+        "NumGuards": 4,
         "IFFUsed": 1
       },
       "Patrols": [
         {
           "EnemyType": [
-            "RWP_Skulker_Pistol"
+            "MountainMeat_Pistol"
           ],
-          "LeaderType": "RWP_Skulker_Rifler",
-          "PatrolSize": 3,
-          "MaxPatrols": 2,
-          "MaxPatrolsLimited": 2,
-          "PatrolCadence": 30.0,
-          "PatrolCadenceLimited": 30.0,
+          "LeaderType": "MountainMeat_SMG",
+          "PatrolSize": 4,
+          "MaxPatrols": 4,
+          "MaxPatrolsLimited": 4,
+          "PatrolCadence": 25.0,
+          "PatrolCadenceLimited": 25.0,
           "IFFUsed": 1,
           "SwarmPlayer": false,
           "AssualtSpeed": "Walking",
@@ -568,10 +635,10 @@
           ],
           "LeaderType": "RW_Floater",
           "PatrolSize": 4,
-          "MaxPatrols": 3,
-          "MaxPatrolsLimited": 3,
-          "PatrolCadence": 30.0,
-          "PatrolCadenceLimited": 30.0,
+          "MaxPatrols": 4,
+          "MaxPatrolsLimited": 4,
+          "PatrolCadence": 25.0,
+          "PatrolCadenceLimited": 25.0,
           "IFFUsed": 3,
           "SwarmPlayer": false,
           "AssualtSpeed": "Walking",
@@ -580,30 +647,29 @@
           "DropsHealth": true
         }
       ]
-    }, 
+    },
     {
-      "NumOverrideTokensForHold": 8,
+      "NumOverrideTokensForHold": 9,
       "MinSupplyPoints": 1,
       "MaxSupplyPoints": 1,
       "MinConstructors": 1,
       "MaxConstructors": 1,
-      "MinPanels": 2,
-      "MaxPanels": 2,
+      "MinPanels": 1,
+      "MaxPanels": 1,
       "MinBoxesSpawned": 2,
-      "MaxBoxesSpawned": 4,
+      "MaxBoxesSpawned": 5,
       "MinTokensPerSupply": 0,
-      "MaxTokensPerSupply": 3,
+      "MaxTokensPerSupply": 4,
       "BoxTokenChance": 0.50,
       "BoxHealthChance": 0.50,
       "PossiblePanelTypes": [
-        "AmmoReloader",
         "Recycler"
       ],
       "TakeChallenge": {
         "TurretType": "SMG",
-        "EnemyType": "RWP_Skulker_Rifler",
+        "EnemyType": "MountainMeat_Rifle",
         "NumTurrets": 0,
-        "NumGuards": 4,
+        "NumGuards": 5,
         "IFFUsed": 1
       },
       "HoldPhases": [
@@ -616,13 +682,13 @@
           "MinTargetsLimited": 1,
           "MaxTargetsLimited": 1,
           "EnemyType": [
-            "RWP_Skulker_Pistol",
-            "RWP_Skulker_Rifler"
+            "MountainMeat_Pistol",
+            "MountainMeat_SMG"
           ],
-          "LeaderType": "RWP_Skulker_Shotgun",
-          "MinEnemies": 4,
-          "MaxEnemies": 4,
-          "MaxEnemiesAlive": 8,
+          "LeaderType": "MountainMeat_Rifle",
+          "MinEnemies": 5,
+          "MaxEnemies": 5,
+          "MaxEnemiesAlive": 10,
           "MaxDirections": 2,
           "SpawnCadence": 20.0,
           "ScanTime": 120.0,
@@ -635,23 +701,23 @@
       ],
       "SupplyChallenge": {
         "TurretType": "SMG",
-        "EnemyType": "RWP_Skulker_Pistol",
+        "EnemyType": "MountainMeat_Rifle",
         "NumTurrets": 0,
-        "NumGuards": 2,
+        "NumGuards": 4,
         "IFFUsed": 1
       },
       "Patrols": [
         {
           "EnemyType": [
-            "RWP_Skulker_Pistol",
-            "RWP_Skulker_Rifler"
+            "MountainMeat_Pistol",
+            "MountainMeat_SMG"
           ],
-          "LeaderType": "RWP_Skulker_Shotgun",
-          "PatrolSize": 4,
-          "MaxPatrols": 3,
-          "MaxPatrolsLimited": 3,
-          "PatrolCadence": 30.0,
-          "PatrolCadenceLimited": 30.0,
+          "LeaderType": "MountainMeat_Rifle",
+          "PatrolSize": 5,
+          "MaxPatrols": 5,
+          "MaxPatrolsLimited": 5,
+          "PatrolCadence": 25.0,
+          "PatrolCadenceLimited": 25.0,
           "IFFUsed": 1,
           "SwarmPlayer": false,
           "AssualtSpeed": "Walking",
@@ -661,14 +727,15 @@
         },
         {
           "EnemyType": [
-            "RW_Rot"
+            "RW_Rot",
+            "RW_Floater"
           ],
-          "LeaderType": "RW_Floater",
-          "PatrolSize": 4,
-          "MaxPatrols": 4,
-          "MaxPatrolsLimited": 4,
-          "PatrolCadence": 30.0,
-          "PatrolCadenceLimited": 30.0,
+          "LeaderType": "RW_Beefkicker",
+          "PatrolSize": 5,
+          "MaxPatrols": 5,
+          "MaxPatrolsLimited": 5,
+          "PatrolCadence": 25.0,
+          "PatrolCadenceLimited": 25.0,
           "IFFUsed": 3,
           "SwarmPlayer": false,
           "AssualtSpeed": "Walking",
@@ -677,30 +744,29 @@
           "DropsHealth": true
         }
       ]
-    }, 
+    },
     {
       "NumOverrideTokensForHold": 9,
       "MinSupplyPoints": 1,
       "MaxSupplyPoints": 1,
       "MinConstructors": 1,
       "MaxConstructors": 1,
-      "MinPanels": 2,
-      "MaxPanels": 2,
+      "MinPanels": 1,
+      "MaxPanels": 1,
       "MinBoxesSpawned": 2,
-      "MaxBoxesSpawned": 4,
+      "MaxBoxesSpawned": 5,
       "MinTokensPerSupply": 0,
-      "MaxTokensPerSupply": 3,
+      "MaxTokensPerSupply": 4,
       "BoxTokenChance": 0.50,
       "BoxHealthChance": 0.50,
       "PossiblePanelTypes": [
-        "AmmoReloader",
         "Recycler"
       ],
       "TakeChallenge": {
         "TurretType": "SMG",
-        "EnemyType": "RWP_Skulker_Rifler",
+        "EnemyType": "MountainMeat_SMG",
         "NumTurrets": 0,
-        "NumGuards": 4,
+        "NumGuards": 6,
         "IFFUsed": 1
       },
       "HoldPhases": [
@@ -713,110 +779,11 @@
           "MinTargetsLimited": 1,
           "MaxTargetsLimited": 1,
           "EnemyType": [
-            "RWP_Skulker_Pistol",
-            "RWP_Skulker_Rifler",
-            "RWP_Skulker_Shotgun"
+            "MountainMeat_Pistol",
+            "MountainMeat_SMG",
+            "MountainMeat_Rifle"
           ],
-          "LeaderType": "RWP_Skulker_Rifler",
-          "MinEnemies": 5,
-          "MaxEnemies": 5,
-          "MaxEnemiesAlive": 10,
-          "MaxDirections": 3,
-          "SpawnCadence": 20.0,
-          "ScanTime": 120.0,
-          "WarmupTime": 7.0,
-          "IFFUsed": 1,
-          "GrenadeChance": 0.0,
-          "GrenadeType": "Sosiggrenade_Flash",
-          "SwarmPlayer": false
-        }
-      ],
-      "SupplyChallenge": {
-        "TurretType": "SMG",
-        "EnemyType": "RWP_Skulker_Pistol",
-        "NumTurrets": 0,
-        "NumGuards": 3,
-        "IFFUsed": 1
-      },
-      "Patrols": [
-        {
-          "EnemyType": [
-            "RWP_Skulker_Pistol",
-            "RWP_Skulker_Rifler",
-            "RWP_Skulker_Shotgun"
-          ],
-          "LeaderType": "RWP_Skulker_Rifler",
-          "PatrolSize": 4,
-          "MaxPatrols": 4,
-          "MaxPatrolsLimited": 4,
-          "PatrolCadence": 30.0,
-          "PatrolCadenceLimited": 30.0,
-          "IFFUsed": 1,
-          "SwarmPlayer": false,
-          "AssualtSpeed": "Walking",
-          "IsBoss": false,
-          "DropChance": 0.50,
-          "DropsHealth": true
-        },
-        {
-          "EnemyType": [
-            "RW_Rot"
-          ],
-          "LeaderType": "RW_Floater",
-          "PatrolSize": 4,
-          "MaxPatrols": 5,
-          "MaxPatrolsLimited": 5,
-          "PatrolCadence": 30.0,
-          "PatrolCadenceLimited": 30.0,
-          "IFFUsed": 3,
-          "SwarmPlayer": false,
-          "AssualtSpeed": "Walking",
-          "IsBoss": false,
-          "DropChance": 0.50,
-          "DropsHealth": true
-        }
-      ]
-    }, 
-    {
-      "NumOverrideTokensForHold": 10,
-      "MinSupplyPoints": 1,
-      "MaxSupplyPoints": 1,
-      "MinConstructors": 1,
-      "MaxConstructors": 1,
-      "MinPanels": 2,
-      "MaxPanels": 2,
-      "MinBoxesSpawned": 2,
-      "MaxBoxesSpawned": 4,
-      "MinTokensPerSupply": 0,
-      "MaxTokensPerSupply": 3,
-      "BoxTokenChance": 0.50,
-      "BoxHealthChance": 0.50,
-      "PossiblePanelTypes": [
-        "AmmoReloader",
-        "Recycler"
-      ],
-      "TakeChallenge": {
-        "TurretType": "SMG",
-        "EnemyType": "RWP_Skulker_Rifler",
-        "NumTurrets": 0,
-        "NumGuards": 4,
-        "IFFUsed": 1
-      },
-      "HoldPhases": [
-        {
-          "Encryptions": [
-            "Static"
-          ],
-          "MinTargets": 1,
-          "MaxTargets": 1,
-          "MinTargetsLimited": 1,
-          "MaxTargetsLimited": 1,
-          "EnemyType": [
-            "RWP_Skulker_Pistol",
-            "RWP_Skulker_Rifler",
-            "RWP_Skulker_Shotgun"
-          ],
-          "LeaderType": "RWP_Skulker_Rifler",
+          "LeaderType": "MountainMeat_Shotgun",
           "MinEnemies": 6,
           "MaxEnemies": 6,
           "MaxEnemiesAlive": 12,
@@ -832,7 +799,7 @@
       ],
       "SupplyChallenge": {
         "TurretType": "SMG",
-        "EnemyType": "RWP_Skulker_Pistol",
+        "EnemyType": "MountainMeat_Shotgun",
         "NumTurrets": 0,
         "NumGuards": 4,
         "IFFUsed": 1
@@ -840,16 +807,16 @@
       "Patrols": [
         {
           "EnemyType": [
-            "RWP_Skulker_Pistol",
-            "RWP_Skulker_Rifler",
-            "RWP_Skulker_Shotgun"
+            "MountainMeat_Pistol",
+            "MountainMeat_SMG",
+            "MountainMeat_Rifle"
           ],
-          "LeaderType": "RWP_Skulker_Rifler",
+          "LeaderType": "MountainMeat_Shotgun",
           "PatrolSize": 5,
-          "MaxPatrols": 4,
-          "MaxPatrolsLimited": 4,
-          "PatrolCadence": 30.0,
-          "PatrolCadenceLimited": 30.0,
+          "MaxPatrols": 6,
+          "MaxPatrolsLimited": 6,
+          "PatrolCadence": 25.0,
+          "PatrolCadenceLimited": 25.0,
           "IFFUsed": 1,
           "SwarmPlayer": false,
           "AssualtSpeed": "Walking",
@@ -859,14 +826,15 @@
         },
         {
           "EnemyType": [
-            "RW_Rot"
+            "RW_Rot",
+            "RW_Floater"
           ],
-          "LeaderType": "RW_Floater",
+          "LeaderType": "RW_Beefkicker",
           "PatrolSize": 5,
-          "MaxPatrols": 5,
-          "MaxPatrolsLimited": 5,
-          "PatrolCadence": 30.0,
-          "PatrolCadenceLimited": 30.0,
+          "MaxPatrols": 6,
+          "MaxPatrolsLimited": 6,
+          "PatrolCadence": 25.0,
+          "PatrolCadenceLimited": 25.0,
           "IFFUsed": 3,
           "SwarmPlayer": false,
           "AssualtSpeed": "Walking",
@@ -875,23 +843,120 @@
           "DropsHealth": true
         }
       ]
-    }, 
+    },
     {
       "NumOverrideTokensForHold": 10,
       "MinSupplyPoints": 1,
       "MaxSupplyPoints": 1,
       "MinConstructors": 1,
       "MaxConstructors": 1,
-      "MinPanels": 2,
-      "MaxPanels": 2,
+      "MinPanels": 1,
+      "MaxPanels": 1,
       "MinBoxesSpawned": 2,
-      "MaxBoxesSpawned": 4,
+      "MaxBoxesSpawned": 5,
       "MinTokensPerSupply": 0,
-      "MaxTokensPerSupply": 3,
+      "MaxTokensPerSupply": 4,
       "BoxTokenChance": 0.50,
       "BoxHealthChance": 0.50,
       "PossiblePanelTypes": [
-        "AmmoReloader",
+        "Recycler"
+      ],
+      "TakeChallenge": {
+        "TurretType": "SMG",
+        "EnemyType": "RW_Rot",
+        "NumTurrets": 0,
+        "NumGuards": 8,
+        "IFFUsed": 3
+      },
+      "HoldPhases": [
+        {
+          "Encryptions": [
+            "Static"
+          ],
+          "MinTargets": 1,
+          "MaxTargets": 1,
+          "MinTargetsLimited": 1,
+          "MaxTargetsLimited": 1,
+          "EnemyType": [
+            "RW_Rot",
+            "RW_Floater"
+          ],
+          "LeaderType": "RW_Beefkicker",
+          "MinEnemies": 7,
+          "MaxEnemies": 7,
+          "MaxEnemiesAlive": 14,
+          "MaxDirections": 3,
+          "SpawnCadence": 20.0,
+          "ScanTime": 180.0,
+          "WarmupTime": 7.0,
+          "IFFUsed": 3,
+          "GrenadeChance": 0.0,
+          "GrenadeType": "Sosiggrenade_Flash",
+          "SwarmPlayer": false
+        }
+      ],
+      "SupplyChallenge": {
+        "TurretType": "SMG",
+        "EnemyType": "RW_Rot",
+        "NumTurrets": 0,
+        "NumGuards": 6,
+        "IFFUsed": 3
+      },
+      "Patrols": [
+        {
+          "EnemyType": [
+            "MountainMeat_Pistol",
+            "MountainMeat_SMG",
+            "MountainMeat_Rifle"
+          ],
+          "LeaderType": "MountainMeat_Shotgun",
+          "PatrolSize": 3,
+          "MaxPatrols": 3,
+          "MaxPatrolsLimited": 3,
+          "PatrolCadence": 25.0,
+          "PatrolCadenceLimited": 25.0,
+          "IFFUsed": 1,
+          "SwarmPlayer": false,
+          "AssualtSpeed": "Walking",
+          "IsBoss": false,
+          "DropChance": 0.50,
+          "DropsHealth": true
+        },
+        {
+          "EnemyType": [
+            "RW_Rot",
+            "RW_Floater"
+          ],
+          "LeaderType": "RW_Beefkicker",
+          "PatrolSize": 5,
+          "MaxPatrols": 8,
+          "MaxPatrolsLimited": 8,
+          "PatrolCadence": 25.0,
+          "PatrolCadenceLimited": 25.0,
+          "IFFUsed": 3,
+          "SwarmPlayer": false,
+          "AssualtSpeed": "Walking",
+          "IsBoss": false,
+          "DropChance": 0.50,
+          "DropsHealth": true
+        }
+      ]
+    },
+    {
+      "NumOverrideTokensForHold": 10,
+      "MinSupplyPoints": 1,
+      "MaxSupplyPoints": 1,
+      "MinConstructors": 1,
+      "MaxConstructors": 1,
+      "MinPanels": 1,
+      "MaxPanels": 1,
+      "MinBoxesSpawned": 2,
+      "MaxBoxesSpawned": 5,
+      "MinTokensPerSupply": 0,
+      "MaxTokensPerSupply": 4,
+      "BoxTokenChance": 0.50,
+      "BoxHealthChance": 0.50,
+      "PossiblePanelTypes": [
         "Recycler"
       ],
       "TakeChallenge": {
@@ -911,18 +976,17 @@
           "MinTargetsLimited": 1,
           "MaxTargetsLimited": 1,
           "EnemyType": [
-            "RWP_PacSquad_Sniper",
             "RWP_PacSquad_Flanker",
-            "RWP_Skulker_Shotgun",
+            "RWP_PacSquad_Sniper",
             "RWP_PacSquad_Trooper"
           ],
           "LeaderType": "RWP_PacSquad_Commander",
-          "MinEnemies": 8,
-          "MaxEnemies": 8,
-          "MaxEnemiesAlive": 16,
-          "MaxDirections": 3,
+          "MinEnemies": 7,
+          "MaxEnemies": 7,
+          "MaxEnemiesAlive": 14,
+          "MaxDirections": 4,
           "SpawnCadence": 20.0,
-          "ScanTime": 120.0,
+          "ScanTime": 180.0,
           "WarmupTime": 7.0,
           "IFFUsed": 1,
           "GrenadeChance": 0.0,
@@ -932,25 +996,24 @@
       ],
       "SupplyChallenge": {
         "TurretType": "SMG",
-        "EnemyType": "RWP_PacSquad_Commander",
+        "EnemyType": "RWP_PacSquad_Trooper",
         "NumTurrets": 0,
-        "NumGuards": 4,
+        "NumGuards": 5,
         "IFFUsed": 1
       },
       "Patrols": [
         {
           "EnemyType": [
-            "RWP_PacSquad_Sniper",
             "RWP_PacSquad_Flanker",
-            "RWP_Skulker_Shotgun",
+            "RWP_PacSquad_Sniper",
             "RWP_PacSquad_Trooper"
           ],
           "LeaderType": "RWP_PacSquad_Commander",
           "PatrolSize": 5,
-          "MaxPatrols": 4,
-          "MaxPatrolsLimited": 4,
-          "PatrolCadence": 30.0,
-          "PatrolCadenceLimited": 30.0,
+          "MaxPatrols": 8,
+          "MaxPatrolsLimited": 8,
+          "PatrolCadence": 25.0,
+          "PatrolCadenceLimited": 25.0,
           "IFFUsed": 1,
           "SwarmPlayer": false,
           "AssualtSpeed": "Walking",
@@ -961,15 +1024,14 @@
         {
           "EnemyType": [
             "RW_Rot",
-            "RW_Floater",
-            "RW_Beefkicker"
+            "RW_Floater"
           ],
-          "LeaderType": "RW_Driller",
+          "LeaderType": "RW_Beefkicker",
           "PatrolSize": 5,
-          "MaxPatrols": 5,
-          "MaxPatrolsLimited": 5,
-          "PatrolCadence": 30.0,
-          "PatrolCadenceLimited": 30.0,
+          "MaxPatrols": 8,
+          "MaxPatrolsLimited": 8,
+          "PatrolCadence": 25.0,
+          "PatrolCadenceLimited": 25.0,
           "IFFUsed": 3,
           "SwarmPlayer": false,
           "AssualtSpeed": "Walking",
@@ -981,689 +1043,6 @@
     }
   ],
   "LevelsEndless": [
-    {
-      "NumOverrideTokensForHold": 5,
-      "MinSupplyPoints": 1,
-      "MaxSupplyPoints": 1,
-      "MinConstructors": 1,
-      "MaxConstructors": 1,
-      "MinPanels": 2,
-      "MaxPanels": 2,
-      "MinBoxesSpawned": 2,
-      "MaxBoxesSpawned": 4,
-      "MinTokensPerSupply": 0,
-      "MaxTokensPerSupply": 3,
-      "BoxTokenChance": 0.50,
-      "BoxHealthChance": 0.50,
-      "PossiblePanelTypes": [
-        "AmmoReloader",
-        "Recycler"
-      ],
-      "TakeChallenge": {
-        "TurretType": "SMG",
-        "EnemyType": "RWP_Skulker_Pistol",
-        "NumTurrets": 0,
-        "NumGuards": 2,
-        "IFFUsed": 1
-      },
-      "HoldPhases": [
-        {
-          "Encryptions": [
-            "Static"
-          ],
-          "MinTargets": 1,
-          "MaxTargets": 1,
-          "MinTargetsLimited": 1,
-          "MaxTargetsLimited": 1,
-          "EnemyType": [
-            "RWP_Skulker_Pistol"
-          ],
-          "LeaderType": "RWP_Skulker_Pistol",
-          "MinEnemies": 2,
-          "MaxEnemies": 2,
-          "MaxEnemiesAlive": 4,
-          "MaxDirections": 1,
-          "SpawnCadence": 20.0,
-          "ScanTime": 30.0,
-          "WarmupTime": 7.0,
-          "IFFUsed": 1,
-          "GrenadeChance": 0.0,
-          "GrenadeType": "Sosiggrenade_Flash",
-          "SwarmPlayer": false
-        }
-      ],
-      "SupplyChallenge": {
-        "TurretType": "SMG",
-        "EnemyType": "RWP_Skulker_Pistol",
-        "NumTurrets": 0,
-        "NumGuards": 1,
-        "IFFUsed": 1
-      },
-      "Patrols": [
-        {
-          "EnemyType": [
-            "RWP_Skulker_Pistol"
-          ],
-          "LeaderType": "RWP_Skulker_Pistol",
-          "PatrolSize": 2,
-          "MaxPatrols": 1,
-          "MaxPatrolsLimited": 1,
-          "PatrolCadence": 30.0,
-          "PatrolCadenceLimited": 30.0,
-          "IFFUsed": 1,
-          "SwarmPlayer": false,
-          "AssualtSpeed": "Walking",
-          "IsBoss": false,
-          "DropChance": 0.50,
-          "DropsHealth": true
-        },
-        {
-          "EnemyType": [
-            "RW_Rot"
-          ],
-          "LeaderType": "RW_Floater",
-          "PatrolSize": 2,
-          "MaxPatrols": 1,
-          "MaxPatrolsLimited": 1,
-          "PatrolCadence": 30.0,
-          "PatrolCadenceLimited": 30.0,
-          "IFFUsed": 3,
-          "SwarmPlayer": false,
-          "AssualtSpeed": "Walking",
-          "IsBoss": false,
-          "DropChance": 0.50,
-          "DropsHealth": true
-        }
-      ]
-    }, 
-    {
-      "NumOverrideTokensForHold": 6,
-      "MinSupplyPoints": 1,
-      "MaxSupplyPoints": 1,
-      "MinConstructors": 1,
-      "MaxConstructors": 1,
-      "MinPanels": 2,
-      "MaxPanels": 2,
-      "MinBoxesSpawned": 2,
-      "MaxBoxesSpawned": 4,
-      "MinTokensPerSupply": 0,
-      "MaxTokensPerSupply": 3,
-      "BoxTokenChance": 0.50,
-      "BoxHealthChance": 0.50,
-      "PossiblePanelTypes": [
-        "AmmoReloader",
-        "Recycler"
-      ],
-      "TakeChallenge": {
-        "TurretType": "SMG",
-        "EnemyType": "RWP_Skulker_Pistol",
-        "NumTurrets": 0,
-        "NumGuards": 4,
-        "IFFUsed": 1
-      },
-      "HoldPhases": [
-        {
-          "Encryptions": [
-            "Static"
-          ],
-          "MinTargets": 1,
-          "MaxTargets": 1,
-          "MinTargetsLimited": 1,
-          "MaxTargetsLimited": 1,
-          "EnemyType": [
-            "RWP_Skulker_Pistol"
-          ],
-          "LeaderType": "RWP_Skulker_Pistol",
-          "MinEnemies": 4,
-          "MaxEnemies": 4,
-          "MaxEnemiesAlive": 8,
-          "MaxDirections": 2,
-          "SpawnCadence": 20.0,
-          "ScanTime": 60.0,
-          "WarmupTime": 7.0,
-          "IFFUsed": 1,
-          "GrenadeChance": 0.0,
-          "GrenadeType": "Sosiggrenade_Flash",
-          "SwarmPlayer": false
-        }
-      ],
-      "SupplyChallenge": {
-        "TurretType": "SMG",
-        "EnemyType": "RWP_Skulker_Pistol",
-        "NumTurrets": 0,
-        "NumGuards": 2,
-        "IFFUsed": 1
-      },
-      "Patrols": [
-        {
-          "EnemyType": [
-            "RWP_Skulker_Pistol"
-          ],
-          "LeaderType": "RWP_Skulker_Pistol",
-          "PatrolSize": 3,
-          "MaxPatrols": 2,
-          "MaxPatrolsLimited": 2,
-          "PatrolCadence": 30.0,
-          "PatrolCadenceLimited": 30.0,
-          "IFFUsed": 1,
-          "SwarmPlayer": false,
-          "AssualtSpeed": "Walking",
-          "IsBoss": false,
-          "DropChance": 0.50,
-          "DropsHealth": true
-        },
-        {
-          "EnemyType": [
-            "RW_Rot"
-          ],
-          "LeaderType": "RW_Floater",
-          "PatrolSize": 3,
-          "MaxPatrols": 2,
-          "MaxPatrolsLimited": 2,
-          "PatrolCadence": 30.0,
-          "PatrolCadenceLimited": 30.0,
-          "IFFUsed": 3,
-          "SwarmPlayer": false,
-          "AssualtSpeed": "Walking",
-          "IsBoss": false,
-          "DropChance": 0.50,
-          "DropsHealth": true
-        }
-      ]
-    }, 
-    {
-      "NumOverrideTokensForHold": 7,
-      "MinSupplyPoints": 1,
-      "MaxSupplyPoints": 1,
-      "MinConstructors": 1,
-      "MaxConstructors": 1,
-      "MinPanels": 2,
-      "MaxPanels": 2,
-      "MinBoxesSpawned": 2,
-      "MaxBoxesSpawned": 4,
-      "MinTokensPerSupply": 0,
-      "MaxTokensPerSupply": 3,
-      "BoxTokenChance": 0.50,
-      "BoxHealthChance": 0.50,
-      "PossiblePanelTypes": [
-        "AmmoReloader",
-        "Recycler"
-      ],
-      "TakeChallenge": {
-        "TurretType": "SMG",
-        "EnemyType": "RWP_Skulker_Rifler",
-        "NumTurrets": 0,
-        "NumGuards": 3,
-        "IFFUsed": 1
-      },
-      "HoldPhases": [
-        {
-          "Encryptions": [
-            "Static"
-          ],
-          "MinTargets": 1,
-          "MaxTargets": 1,
-          "MinTargetsLimited": 1,
-          "MaxTargetsLimited": 1,
-          "EnemyType": [
-            "RWP_Skulker_Pistol",
-            "RWP_Skulker_Rifler"
-          ],
-          "LeaderType": "RWP_Skulker_Rifler",
-          "MinEnemies": 3,
-          "MaxEnemies": 3,
-          "MaxEnemiesAlive": 6,
-          "MaxDirections": 2,
-          "SpawnCadence": 20.0,
-          "ScanTime": 90.0,
-          "WarmupTime": 7.0,
-          "IFFUsed": 1,
-          "GrenadeChance": 0.0,
-          "GrenadeType": "Sosiggrenade_Flash",
-          "SwarmPlayer": false
-        }
-      ],
-      "SupplyChallenge": {
-        "TurretType": "SMG",
-        "EnemyType": "RWP_Skulker_Pistol",
-        "NumTurrets": 0,
-        "NumGuards": 1,
-        "IFFUsed": 1
-      },
-      "Patrols": [
-        {
-          "EnemyType": [
-            "RWP_Skulker_Pistol"
-          ],
-          "LeaderType": "RWP_Skulker_Rifler",
-          "PatrolSize": 3,
-          "MaxPatrols": 2,
-          "MaxPatrolsLimited": 2,
-          "PatrolCadence": 30.0,
-          "PatrolCadenceLimited": 30.0,
-          "IFFUsed": 1,
-          "SwarmPlayer": false,
-          "AssualtSpeed": "Walking",
-          "IsBoss": false,
-          "DropChance": 0.50,
-          "DropsHealth": true
-        },
-        {
-          "EnemyType": [
-            "RW_Rot"
-          ],
-          "LeaderType": "RW_Floater",
-          "PatrolSize": 4,
-          "MaxPatrols": 3,
-          "MaxPatrolsLimited": 3,
-          "PatrolCadence": 30.0,
-          "PatrolCadenceLimited": 30.0,
-          "IFFUsed": 3,
-          "SwarmPlayer": false,
-          "AssualtSpeed": "Walking",
-          "IsBoss": false,
-          "DropChance": 0.50,
-          "DropsHealth": true
-        }
-      ]
-    }, 
-    {
-      "NumOverrideTokensForHold": 8,
-      "MinSupplyPoints": 1,
-      "MaxSupplyPoints": 1,
-      "MinConstructors": 1,
-      "MaxConstructors": 1,
-      "MinPanels": 2,
-      "MaxPanels": 2,
-      "MinBoxesSpawned": 2,
-      "MaxBoxesSpawned": 4,
-      "MinTokensPerSupply": 0,
-      "MaxTokensPerSupply": 3,
-      "BoxTokenChance": 0.50,
-      "BoxHealthChance": 0.50,
-      "PossiblePanelTypes": [
-        "AmmoReloader",
-        "Recycler"
-      ],
-      "TakeChallenge": {
-        "TurretType": "SMG",
-        "EnemyType": "RWP_Skulker_Rifler",
-        "NumTurrets": 0,
-        "NumGuards": 4,
-        "IFFUsed": 1
-      },
-      "HoldPhases": [
-        {
-          "Encryptions": [
-            "Static"
-          ],
-          "MinTargets": 1,
-          "MaxTargets": 1,
-          "MinTargetsLimited": 1,
-          "MaxTargetsLimited": 1,
-          "EnemyType": [
-            "RWP_Skulker_Pistol",
-            "RWP_Skulker_Rifler"
-          ],
-          "LeaderType": "RWP_Skulker_Shotgun",
-          "MinEnemies": 4,
-          "MaxEnemies": 4,
-          "MaxEnemiesAlive": 8,
-          "MaxDirections": 2,
-          "SpawnCadence": 20.0,
-          "ScanTime": 120.0,
-          "WarmupTime": 7.0,
-          "IFFUsed": 1,
-          "GrenadeChance": 0.0,
-          "GrenadeType": "Sosiggrenade_Flash",
-          "SwarmPlayer": false
-        }
-      ],
-      "SupplyChallenge": {
-        "TurretType": "SMG",
-        "EnemyType": "RWP_Skulker_Pistol",
-        "NumTurrets": 0,
-        "NumGuards": 2,
-        "IFFUsed": 1
-      },
-      "Patrols": [
-        {
-          "EnemyType": [
-            "RWP_Skulker_Pistol",
-            "RWP_Skulker_Rifler"
-          ],
-          "LeaderType": "RWP_Skulker_Shotgun",
-          "PatrolSize": 4,
-          "MaxPatrols": 3,
-          "MaxPatrolsLimited": 3,
-          "PatrolCadence": 30.0,
-          "PatrolCadenceLimited": 30.0,
-          "IFFUsed": 1,
-          "SwarmPlayer": false,
-          "AssualtSpeed": "Walking",
-          "IsBoss": false,
-          "DropChance": 0.50,
-          "DropsHealth": true
-        },
-        {
-          "EnemyType": [
-            "RW_Rot"
-          ],
-          "LeaderType": "RW_Floater",
-          "PatrolSize": 4,
-          "MaxPatrols": 4,
-          "MaxPatrolsLimited": 4,
-          "PatrolCadence": 30.0,
-          "PatrolCadenceLimited": 30.0,
-          "IFFUsed": 3,
-          "SwarmPlayer": false,
-          "AssualtSpeed": "Walking",
-          "IsBoss": false,
-          "DropChance": 0.50,
-          "DropsHealth": true
-        }
-      ]
-    }, 
-    {
-      "NumOverrideTokensForHold": 9,
-      "MinSupplyPoints": 1,
-      "MaxSupplyPoints": 1,
-      "MinConstructors": 1,
-      "MaxConstructors": 1,
-      "MinPanels": 2,
-      "MaxPanels": 2,
-      "MinBoxesSpawned": 2,
-      "MaxBoxesSpawned": 4,
-      "MinTokensPerSupply": 0,
-      "MaxTokensPerSupply": 3,
-      "BoxTokenChance": 0.50,
-      "BoxHealthChance": 0.50,
-      "PossiblePanelTypes": [
-        "AmmoReloader",
-        "Recycler"
-      ],
-      "TakeChallenge": {
-        "TurretType": "SMG",
-        "EnemyType": "RWP_Skulker_Rifler",
-        "NumTurrets": 0,
-        "NumGuards": 4,
-        "IFFUsed": 1
-      },
-      "HoldPhases": [
-        {
-          "Encryptions": [
-            "Static"
-          ],
-          "MinTargets": 1,
-          "MaxTargets": 1,
-          "MinTargetsLimited": 1,
-          "MaxTargetsLimited": 1,
-          "EnemyType": [
-            "RWP_Skulker_Pistol",
-            "RWP_Skulker_Rifler",
-            "RWP_Skulker_Shotgun"
-          ],
-          "LeaderType": "RWP_Skulker_Rifler",
-          "MinEnemies": 5,
-          "MaxEnemies": 5,
-          "MaxEnemiesAlive": 10,
-          "MaxDirections": 3,
-          "SpawnCadence": 20.0,
-          "ScanTime": 120.0,
-          "WarmupTime": 7.0,
-          "IFFUsed": 1,
-          "GrenadeChance": 0.0,
-          "GrenadeType": "Sosiggrenade_Flash",
-          "SwarmPlayer": false
-        }
-      ],
-      "SupplyChallenge": {
-        "TurretType": "SMG",
-        "EnemyType": "RWP_Skulker_Pistol",
-        "NumTurrets": 0,
-        "NumGuards": 3,
-        "IFFUsed": 1
-      },
-      "Patrols": [
-        {
-          "EnemyType": [
-            "RWP_Skulker_Pistol",
-            "RWP_Skulker_Rifler",
-            "RWP_Skulker_Shotgun"
-          ],
-          "LeaderType": "RWP_Skulker_Rifler",
-          "PatrolSize": 4,
-          "MaxPatrols": 4,
-          "MaxPatrolsLimited": 4,
-          "PatrolCadence": 30.0,
-          "PatrolCadenceLimited": 30.0,
-          "IFFUsed": 1,
-          "SwarmPlayer": false,
-          "AssualtSpeed": "Walking",
-          "IsBoss": false,
-          "DropChance": 0.50,
-          "DropsHealth": true
-        },
-        {
-          "EnemyType": [
-            "RW_Rot"
-          ],
-          "LeaderType": "RW_Floater",
-          "PatrolSize": 4,
-          "MaxPatrols": 5,
-          "MaxPatrolsLimited": 5,
-          "PatrolCadence": 30.0,
-          "PatrolCadenceLimited": 30.0,
-          "IFFUsed": 3,
-          "SwarmPlayer": false,
-          "AssualtSpeed": "Walking",
-          "IsBoss": false,
-          "DropChance": 0.50,
-          "DropsHealth": true
-        }
-      ]
-    }, 
-    {
-      "NumOverrideTokensForHold": 10,
-      "MinSupplyPoints": 1,
-      "MaxSupplyPoints": 1,
-      "MinConstructors": 1,
-      "MaxConstructors": 1,
-      "MinPanels": 2,
-      "MaxPanels": 2,
-      "MinBoxesSpawned": 2,
-      "MaxBoxesSpawned": 4,
-      "MinTokensPerSupply": 0,
-      "MaxTokensPerSupply": 3,
-      "BoxTokenChance": 0.50,
-      "BoxHealthChance": 0.50,
-      "PossiblePanelTypes": [
-        "AmmoReloader",
-        "Recycler"
-      ],
-      "TakeChallenge": {
-        "TurretType": "SMG",
-        "EnemyType": "RWP_Skulker_Rifler",
-        "NumTurrets": 0,
-        "NumGuards": 4,
-        "IFFUsed": 1
-      },
-      "HoldPhases": [
-        {
-          "Encryptions": [
-            "Static"
-          ],
-          "MinTargets": 1,
-          "MaxTargets": 1,
-          "MinTargetsLimited": 1,
-          "MaxTargetsLimited": 1,
-          "EnemyType": [
-            "RWP_Skulker_Pistol",
-            "RWP_Skulker_Rifler",
-            "RWP_Skulker_Shotgun"
-          ],
-          "LeaderType": "RWP_Skulker_Rifler",
-          "MinEnemies": 6,
-          "MaxEnemies": 6,
-          "MaxEnemiesAlive": 12,
-          "MaxDirections": 3,
-          "SpawnCadence": 20.0,
-          "ScanTime": 120.0,
-          "WarmupTime": 7.0,
-          "IFFUsed": 1,
-          "GrenadeChance": 0.0,
-          "GrenadeType": "Sosiggrenade_Flash",
-          "SwarmPlayer": false
-        }
-      ],
-      "SupplyChallenge": {
-        "TurretType": "SMG",
-        "EnemyType": "RWP_Skulker_Pistol",
-        "NumTurrets": 0,
-        "NumGuards": 4,
-        "IFFUsed": 1
-      },
-      "Patrols": [
-        {
-          "EnemyType": [
-            "RWP_Skulker_Pistol",
-            "RWP_Skulker_Rifler",
-            "RWP_Skulker_Shotgun"
-          ],
-          "LeaderType": "RWP_Skulker_Rifler",
-          "PatrolSize": 5,
-          "MaxPatrols": 4,
-          "MaxPatrolsLimited": 4,
-          "PatrolCadence": 30.0,
-          "PatrolCadenceLimited": 30.0,
-          "IFFUsed": 1,
-          "SwarmPlayer": false,
-          "AssualtSpeed": "Walking",
-          "IsBoss": false,
-          "DropChance": 0.50,
-          "DropsHealth": true
-        },
-        {
-          "EnemyType": [
-            "RW_Rot"
-          ],
-          "LeaderType": "RW_Floater",
-          "PatrolSize": 5,
-          "MaxPatrols": 5,
-          "MaxPatrolsLimited": 5,
-          "PatrolCadence": 30.0,
-          "PatrolCadenceLimited": 30.0,
-          "IFFUsed": 3,
-          "SwarmPlayer": false,
-          "AssualtSpeed": "Walking",
-          "IsBoss": false,
-          "DropChance": 0.50,
-          "DropsHealth": true
-        }
-      ]
-    }, 
-    {
-      "NumOverrideTokensForHold": 10,
-      "MinSupplyPoints": 1,
-      "MaxSupplyPoints": 1,
-      "MinConstructors": 1,
-      "MaxConstructors": 1,
-      "MinPanels": 2,
-      "MaxPanels": 2,
-      "MinBoxesSpawned": 2,
-      "MaxBoxesSpawned": 4,
-      "MinTokensPerSupply": 0,
-      "MaxTokensPerSupply": 3,
-      "BoxTokenChance": 0.50,
-      "BoxHealthChance": 0.50,
-      "PossiblePanelTypes": [
-        "AmmoReloader",
-        "Recycler"
-      ],
-      "TakeChallenge": {
-        "TurretType": "SMG",
-        "EnemyType": "RWP_PacSquad_Trooper",
-        "NumTurrets": 0,
-        "NumGuards": 6,
-        "IFFUsed": 1
-      },
-      "HoldPhases": [
-        {
-          "Encryptions": [
-            "Static"
-          ],
-          "MinTargets": 1,
-          "MaxTargets": 1,
-          "MinTargetsLimited": 1,
-          "MaxTargetsLimited": 1,
-          "EnemyType": [
-            "RWP_PacSquad_Sniper",
-            "RWP_PacSquad_Flanker",
-            "RWP_Skulker_Shotgun",
-            "RWP_PacSquad_Trooper"
-          ],
-          "LeaderType": "RWP_PacSquad_Commander",
-          "MinEnemies": 8,
-          "MaxEnemies": 8,
-          "MaxEnemiesAlive": 16,
-          "MaxDirections": 3,
-          "SpawnCadence": 20.0,
-          "ScanTime": 120.0,
-          "WarmupTime": 7.0,
-          "IFFUsed": 1,
-          "GrenadeChance": 0.0,
-          "GrenadeType": "Sosiggrenade_Flash",
-          "SwarmPlayer": false
-        }
-      ],
-      "SupplyChallenge": {
-        "TurretType": "SMG",
-        "EnemyType": "RWP_PacSquad_Commander",
-        "NumTurrets": 0,
-        "NumGuards": 4,
-        "IFFUsed": 1
-      },
-      "Patrols": [
-        {
-          "EnemyType": [
-            "RWP_PacSquad_Sniper",
-            "RWP_PacSquad_Flanker",
-            "RWP_Skulker_Shotgun",
-            "RWP_PacSquad_Trooper"
-          ],
-          "LeaderType": "RWP_PacSquad_Commander",
-          "PatrolSize": 5,
-          "MaxPatrols": 4,
-          "MaxPatrolsLimited": 4,
-          "PatrolCadence": 30.0,
-          "PatrolCadenceLimited": 30.0,
-          "IFFUsed": 1,
-          "SwarmPlayer": false,
-          "AssualtSpeed": "Walking",
-          "IsBoss": false,
-          "DropChance": 0.50,
-          "DropsHealth": true
-        },
-        {
-          "EnemyType": [
-            "RW_Rot",
-            "RW_Floater",
-            "RW_Beefkicker"
-          ],
-          "LeaderType": "RW_Driller",
-          "PatrolSize": 5,
-          "MaxPatrols": 5,
-          "MaxPatrolsLimited": 5,
-          "PatrolCadence": 30.0,
-          "PatrolCadenceLimited": 30.0,
-          "IFFUsed": 3,
-          "SwarmPlayer": false,
-          "AssualtSpeed": "Walking",
-          "IsBoss": false,
-          "DropChance": 0.50,
-          "DropsHealth": true
-        }
-      ]
-    }
+   
   ]
 }
