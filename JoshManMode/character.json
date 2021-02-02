@@ -1,6 +1,6 @@
 ﻿{
   "DisplayName": "Josh Man Mode",
-  "Description": "A mix of Zombie foes and regular foes which slowly builds up to a Hold 8 Boss fight agains the Pac Squads. Uses Ricky-Dicky-Random Progression (Works in both Standard and Endless) (Designed to be played on 10k HP and Limited ammo)",
+  "Description": "A steady build of zombies and humans until a final boss fight against the Pac squads at hold 5 Play with: (Limited Ammo, Standard 5 Hold, Radar Off)",
   "CharacterID": 11,
   "CharacterGroup": 0,
   "TableID": "DD_C03",
