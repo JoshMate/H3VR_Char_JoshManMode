@@ -5,7 +5,7 @@
   "CharacterGroup": 0,
   "TableID": "DD_C03",
   "CharacterIconName": "TNH_CHARACTER_JOSHMATE",
-  "StartingTokens": 3,
+  "StartingTokens": 5,
   "ForceAllAgentWeapons": false,
   "ForceDisableOutfitFunctionality": false,
   "UsesPurchasePriceIncrement": false,
@@ -58,10 +58,10 @@
     "ListOverride": [
       "GarageTool_HandAxe",
       "Improvised_Cleaver",
-      "Hammer",
-      "GarageTool_WrenchTwoSided",
+      "GarageTool_Hammer2",
       "FarmTool_Sickle",
-      "Crowbar"
+      "Crowbar",
+      "PipeWrench"
     ]
   },
   "PrimaryItem": {
@@ -270,7 +270,7 @@
   ],
   "Levels": [
     {
-      "NumOverrideTokensForHold": 7,
+      "NumOverrideTokensForHold": 10,
       "MinSupplyPoints": 1,
       "MaxSupplyPoints": 1,
       "MinConstructors": 1,
@@ -278,7 +278,7 @@
       "MinPanels": 1,
       "MaxPanels": 1,
       "MinBoxesSpawned": 2,
-      "MaxBoxesSpawned": 5,
+      "MaxBoxesSpawned": 6,
       "MinTokensPerSupply": 0,
       "MaxTokensPerSupply": 4,
       "BoxTokenChance": 0.50,
@@ -290,7 +290,7 @@
         "TurretType": "SMG",
         "EnemyType": "MountainMeat_Melee",
         "NumTurrets": 0,
-        "NumGuards": 3,
+        "NumGuards": 2,
         "IFFUsed": 1
       },
       "HoldPhases": [
@@ -306,11 +306,11 @@
             "MountainMeat_Melee"
           ],
           "LeaderType": "MountainMeat_Melee",
-          "MinEnemies": 1,
-          "MaxEnemies": 1,
-          "MaxEnemiesAlive": 3,
+          "MinEnemies": 2,
+          "MaxEnemies": 2,
+          "MaxEnemiesAlive": 4,
           "MaxDirections": 1,
-          "SpawnCadence": 10.0,
+          "SpawnCadence": 20.0,
           "ScanTime": 30.0,
           "WarmupTime": 7.0,
           "IFFUsed": 1,
@@ -332,39 +332,22 @@
             "MountainMeat_Melee"
           ],
           "LeaderType": "MountainMeat_Melee",
-          "PatrolSize": 1,
-          "MaxPatrols": 2,
-          "MaxPatrolsLimited": 2,
-          "PatrolCadence": 25.0,
-          "PatrolCadenceLimited": 25.0,
+          "PatrolSize": 2,
+          "MaxPatrols": 3,
+          "MaxPatrolsLimited": 3,
+          "PatrolCadence": 10.0,
+          "PatrolCadenceLimited": 10.0,
           "IFFUsed": 1,
           "SwarmPlayer": false,
           "AssualtSpeed": "Walking",
           "IsBoss": false,
-          "DropChance": 0.50,
-          "DropsHealth": true
-        },
-        {
-          "EnemyType": [
-            "RW_Rot"
-          ],
-          "LeaderType": "RW_Rot",
-          "PatrolSize": 1,
-          "MaxPatrols": 2,
-          "MaxPatrolsLimited": 2,
-          "PatrolCadence": 25.0,
-          "PatrolCadenceLimited": 25.0,
-          "IFFUsed": 3,
-          "SwarmPlayer": false,
-          "AssualtSpeed": "Walking",
-          "IsBoss": false,
-          "DropChance": 0.50,
+          "DropChance": 1.00,
           "DropsHealth": true
         }
       ]
     },
     {
-      "NumOverrideTokensForHold": 7,
+      "NumOverrideTokensForHold": 10,
       "MinSupplyPoints": 1,
       "MaxSupplyPoints": 1,
       "MinConstructors": 1,
@@ -372,102 +355,7 @@
       "MinPanels": 1,
       "MaxPanels": 1,
       "MinBoxesSpawned": 2,
-      "MaxBoxesSpawned": 5,
-      "MinTokensPerSupply": 0,
-      "MaxTokensPerSupply": 4,
-      "BoxTokenChance": 0.50,
-      "BoxHealthChance": 0.50,
-      "PossiblePanelTypes": [
-        "Recycler"
-      ],
-      "TakeChallenge": {
-        "TurretType": "SMG",
-        "EnemyType": "MountainMeat_Melee",
-        "NumTurrets": 0,
-        "NumGuards": 3,
-        "IFFUsed": 1
-      },
-      "HoldPhases": [
-        {
-          "Encryptions": [
-            "Static"
-          ],
-          "MinTargets": 1,
-          "MaxTargets": 1,
-          "MinTargetsLimited": 1,
-          "MaxTargetsLimited": 1,
-          "EnemyType": [
-            "MountainMeat_Melee",
-            "MountainMeat_Pistol"
-          ],
-          "LeaderType": "MountainMeat_Pistol",
-          "MinEnemies": 2,
-          "MaxEnemies": 2,
-          "MaxEnemiesAlive": 4,
-          "MaxDirections": 1,
-          "SpawnCadence": 15.0,
-          "ScanTime": 60.0,
-          "WarmupTime": 7.0,
-          "IFFUsed": 1,
-          "GrenadeChance": 0.0,
-          "GrenadeType": "Sosiggrenade_Flash",
-          "SwarmPlayer": false
-        }
-      ],
-      "SupplyChallenge": {
-        "TurretType": "SMG",
-        "EnemyType": "MountainMeat_Melee",
-        "NumTurrets": 0,
-        "NumGuards": 3,
-        "IFFUsed": 1
-      },
-      "Patrols": [
-        {
-          "EnemyType": [
-            "MountainMeat_Melee"
-          ],
-          "LeaderType": "MountainMeat_Melee",
-          "PatrolSize": 2,
-          "MaxPatrols": 3,
-          "MaxPatrolsLimited": 3,
-          "PatrolCadence": 25.0,
-          "PatrolCadenceLimited": 25.0,
-          "IFFUsed": 1,
-          "SwarmPlayer": false,
-          "AssualtSpeed": "Walking",
-          "IsBoss": false,
-          "DropChance": 0.50,
-          "DropsHealth": true
-        },
-        {
-          "EnemyType": [
-            "RW_Rot"
-          ],
-          "LeaderType": "RW_Rot",
-          "PatrolSize": 2,
-          "MaxPatrols": 3,
-          "MaxPatrolsLimited": 3,
-          "PatrolCadence": 25.0,
-          "PatrolCadenceLimited": 25.0,
-          "IFFUsed": 3,
-          "SwarmPlayer": false,
-          "AssualtSpeed": "Walking",
-          "IsBoss": false,
-          "DropChance": 0.50,
-          "DropsHealth": true
-        }
-      ]
-    },
-    {
-      "NumOverrideTokensForHold": 8,
-      "MinSupplyPoints": 1,
-      "MaxSupplyPoints": 1,
-      "MinConstructors": 1,
-      "MaxConstructors": 1,
-      "MinPanels": 1,
-      "MaxPanels": 1,
-      "MinBoxesSpawned": 2,
-      "MaxBoxesSpawned": 5,
+      "MaxBoxesSpawned": 6,
       "MinTokensPerSupply": 0,
       "MaxTokensPerSupply": 4,
       "BoxTokenChance": 0.50,
@@ -479,7 +367,7 @@
         "TurretType": "SMG",
         "EnemyType": "MountainMeat_Pistol",
         "NumTurrets": 0,
-        "NumGuards": 3,
+        "NumGuards": 4,
         "IFFUsed": 1
       },
       "HoldPhases": [
@@ -492,14 +380,13 @@
           "MinTargetsLimited": 1,
           "MaxTargetsLimited": 1,
           "EnemyType": [
-            "MountainMeat_Melee",
             "MountainMeat_Pistol"
           ],
           "LeaderType": "MountainMeat_Pistol",
           "MinEnemies": 3,
           "MaxEnemies": 3,
           "MaxEnemiesAlive": 6,
-          "MaxDirections": 1,
+          "MaxDirections": 3,
           "SpawnCadence": 20.0,
           "ScanTime": 90.0,
           "WarmupTime": 7.0,
@@ -519,43 +406,43 @@
       "Patrols": [
         {
           "EnemyType": [
-            "MountainMeat_Melee",
             "MountainMeat_Pistol"
           ],
           "LeaderType": "MountainMeat_Pistol",
-          "PatrolSize": 3,
+          "PatrolSize": 4,
           "MaxPatrols": 3,
           "MaxPatrolsLimited": 3,
-          "PatrolCadence": 25.0,
-          "PatrolCadenceLimited": 25.0,
+          "PatrolCadence": 10.0,
+          "PatrolCadenceLimited": 10.0,
           "IFFUsed": 1,
           "SwarmPlayer": false,
           "AssualtSpeed": "Walking",
           "IsBoss": false,
-          "DropChance": 0.50,
+          "DropChance": 1.00,
           "DropsHealth": true
         },
         {
           "EnemyType": [
-            "RW_Rot"
+            "RW_Rot",
+            "RW_Floater"
           ],
           "LeaderType": "RW_Floater",
-          "PatrolSize": 3,
-          "MaxPatrols": 3,
-          "MaxPatrolsLimited": 3,
-          "PatrolCadence": 25.0,
-          "PatrolCadenceLimited": 25.0,
+          "PatrolSize": 4,
+          "MaxPatrols": 2,
+          "MaxPatrolsLimited": 2,
+          "PatrolCadence": 10.0,
+          "PatrolCadenceLimited": 10.0,
           "IFFUsed": 3,
           "SwarmPlayer": false,
           "AssualtSpeed": "Walking",
           "IsBoss": false,
-          "DropChance": 0.50,
+          "DropChance": 1.00,
           "DropsHealth": true
         }
       ]
     },
     {
-      "NumOverrideTokensForHold": 8,
+      "NumOverrideTokensForHold": 10,
       "MinSupplyPoints": 1,
       "MaxSupplyPoints": 1,
       "MinConstructors": 1,
@@ -563,7 +450,7 @@
       "MinPanels": 1,
       "MaxPanels": 1,
       "MinBoxesSpawned": 2,
-      "MaxBoxesSpawned": 5,
+      "MaxBoxesSpawned": 6,
       "MinTokensPerSupply": 0,
       "MaxTokensPerSupply": 4,
       "BoxTokenChance": 0.50,
@@ -575,7 +462,7 @@
         "TurretType": "SMG",
         "EnemyType": "MountainMeat_SMG",
         "NumTurrets": 0,
-        "NumGuards": 3,
+        "NumGuards": 4,
         "IFFUsed": 1
       },
       "HoldPhases": [
@@ -588,13 +475,15 @@
           "MinTargetsLimited": 1,
           "MaxTargetsLimited": 1,
           "EnemyType": [
-            "MountainMeat_Pistol"
+            "MountainMeat_Pistol",
+            "MountainMeat_SMG",
+            "MountainMeat_Shotgun"
           ],
-          "LeaderType": "MountainMeat_SMG",
+          "LeaderType": "MountainMeat_Rifle",
           "MinEnemies": 4,
           "MaxEnemies": 4,
           "MaxEnemiesAlive": 8,
-          "MaxDirections": 2,
+          "MaxDirections": 3,
           "SpawnCadence": 20.0,
           "ScanTime": 90.0,
           "WarmupTime": 7.0,
@@ -606,7 +495,204 @@
       ],
       "SupplyChallenge": {
         "TurretType": "SMG",
-        "EnemyType": "MountainMeat_Pistol",
+        "EnemyType": "RW_Rot",
+        "NumTurrets": 0,
+        "NumGuards": 6,
+        "IFFUsed": 3
+      },
+      "Patrols": [
+        {
+          "EnemyType": [
+            "MountainMeat_Pistol",
+            "MountainMeat_SMG",
+            "MountainMeat_Shotgun"
+          ],
+          "LeaderType": "MountainMeat_Rifle",
+          "PatrolSize": 4,
+          "MaxPatrols": 3,
+          "MaxPatrolsLimited": 3,
+          "PatrolCadence": 10.0,
+          "PatrolCadenceLimited": 10.0,
+          "IFFUsed": 1,
+          "SwarmPlayer": false,
+          "AssualtSpeed": "Walking",
+          "IsBoss": false,
+          "DropChance": 1.00,
+          "DropsHealth": true
+        },
+        {
+          "EnemyType": [
+            "RW_Rot",
+            "RW_Floater"
+          ],
+          "LeaderType": "RW_HamFister",
+          "PatrolSize": 4,
+          "MaxPatrols": 2,
+          "MaxPatrolsLimited": 2,
+          "PatrolCadence": 10.0,
+          "PatrolCadenceLimited": 10.0,
+          "IFFUsed": 3,
+          "SwarmPlayer": false,
+          "AssualtSpeed": "Walking",
+          "IsBoss": false,
+          "DropChance": 1.00,
+          "DropsHealth": true
+        }
+      ]
+    },
+    {
+      "NumOverrideTokensForHold": 12,
+      "MinSupplyPoints": 1,
+      "MaxSupplyPoints": 1,
+      "MinConstructors": 1,
+      "MaxConstructors": 1,
+      "MinPanels": 1,
+      "MaxPanels": 1,
+      "MinBoxesSpawned": 2,
+      "MaxBoxesSpawned": 6,
+      "MinTokensPerSupply": 0,
+      "MaxTokensPerSupply": 4,
+      "BoxTokenChance": 0.50,
+      "BoxHealthChance": 0.50,
+      "PossiblePanelTypes": [
+        "Recycler"
+      ],
+      "TakeChallenge": {
+        "TurretType": "SMG",
+        "EnemyType": "RW_Floater",
+        "NumTurrets": 0,
+        "NumGuards": 6,
+        "IFFUsed": 3
+      },
+      "HoldPhases": [
+        {
+          "Encryptions": [
+            "Static"
+          ],
+          "MinTargets": 1,
+          "MaxTargets": 1,
+          "MinTargetsLimited": 1,
+          "MaxTargetsLimited": 1,
+          "EnemyType": [
+            "RW_Rot",
+            "RW_Floater"
+          ],
+          "LeaderType": "RW_HamFister",
+          "MinEnemies": 5,
+          "MaxEnemies": 5,
+          "MaxEnemiesAlive": 10,
+          "MaxDirections": 3,
+          "SpawnCadence": 20.0,
+          "ScanTime": 90.0,
+          "WarmupTime": 7.0,
+          "IFFUsed": 3,
+          "GrenadeChance": 0.0,
+          "GrenadeType": "Sosiggrenade_Flash",
+          "SwarmPlayer": false
+        }
+      ],
+      "SupplyChallenge": {
+        "TurretType": "SMG",
+        "EnemyType": "RW_Rot",
+        "NumTurrets": 0,
+        "NumGuards": 5,
+        "IFFUsed": 3
+      },
+      "Patrols": [
+        {
+          "EnemyType": [
+            "MountainMeat_Pistol",
+            "MountainMeat_SMG",
+            "MountainMeat_Shotgun"
+          ],
+          "LeaderType": "MountainMeat_Rifle",
+          "PatrolSize": 4,
+          "MaxPatrols": 3,
+          "MaxPatrolsLimited": 3,
+          "PatrolCadence": 10.0,
+          "PatrolCadenceLimited": 10.0,
+          "IFFUsed": 1,
+          "SwarmPlayer": false,
+          "AssualtSpeed": "Walking",
+          "IsBoss": false,
+          "DropChance": 1.00,
+          "DropsHealth": true
+        },
+        {
+          "EnemyType": [
+            "RW_Rot",
+            "RW_Floater"
+          ],
+          "LeaderType": "RW_HamFister",
+          "PatrolSize": 4,
+          "MaxPatrols": 3,
+          "MaxPatrolsLimited": 3,
+          "PatrolCadence": 10.0,
+          "PatrolCadenceLimited": 10.0,
+          "IFFUsed": 3,
+          "SwarmPlayer": false,
+          "AssualtSpeed": "Walking",
+          "IsBoss": false,
+          "DropChance": 1.00,
+          "DropsHealth": true
+        }
+      ]
+    },
+    {
+      "NumOverrideTokensForHold": 15,
+      "MinSupplyPoints": 1,
+      "MaxSupplyPoints": 1,
+      "MinConstructors": 1,
+      "MaxConstructors": 1,
+      "MinPanels": 1,
+      "MaxPanels": 1,
+      "MinBoxesSpawned": 2,
+      "MaxBoxesSpawned": 6,
+      "MinTokensPerSupply": 0,
+      "MaxTokensPerSupply": 4,
+      "BoxTokenChance": 0.50,
+      "BoxHealthChance": 0.50,
+      "PossiblePanelTypes": [
+        "Recycler"
+      ],
+      "TakeChallenge": {
+        "TurretType": "SMG",
+        "EnemyType": "RWP_PacSquad_Trooper",
+        "NumTurrets": 0,
+        "NumGuards": 8,
+        "IFFUsed": 1
+      },
+      "HoldPhases": [
+        {
+          "Encryptions": [
+            "Static"
+          ],
+          "MinTargets": 1,
+          "MaxTargets": 1,
+          "MinTargetsLimited": 1,
+          "MaxTargetsLimited": 1,
+          "EnemyType": [
+            "RWP_PacSquad_Flanker",
+            "RWP_PacSquad_Sniper",
+            "RWP_PacSquad_Trooper"
+          ],
+          "LeaderType": "RWP_PacSquad_Commander",
+          "MinEnemies": 6,
+          "MaxEnemies": 6,
+          "MaxEnemiesAlive": 12,
+          "MaxDirections": 4,
+          "SpawnCadence": 20.0,
+          "ScanTime": 120.0,
+          "WarmupTime": 7.0,
+          "IFFUsed": 1,
+          "GrenadeChance": 0.0,
+          "GrenadeType": "Sosiggrenade_Flash",
+          "SwarmPlayer": false
+        }
+      ],
+      "SupplyChallenge": {
+        "TurretType": "SMG",
+        "EnemyType": "RWP_PacSquad_Trooper",
         "NumTurrets": 0,
         "NumGuards": 4,
         "IFFUsed": 1
@@ -614,429 +700,57 @@
       "Patrols": [
         {
           "EnemyType": [
-            "MountainMeat_Pistol"
+            "RWP_PacSquad_Flanker",
+            "RWP_PacSquad_Sniper",
+            "RWP_PacSquad_Trooper"
           ],
-          "LeaderType": "MountainMeat_SMG",
+          "LeaderType": "RWP_PacSquad_Commander",
           "PatrolSize": 4,
           "MaxPatrols": 4,
           "MaxPatrolsLimited": 4,
-          "PatrolCadence": 25.0,
-          "PatrolCadenceLimited": 25.0,
+          "PatrolCadence": 10.0,
+          "PatrolCadenceLimited": 10.0,
           "IFFUsed": 1,
           "SwarmPlayer": false,
           "AssualtSpeed": "Walking",
           "IsBoss": false,
-          "DropChance": 0.50,
+          "DropChance": 1.00,
           "DropsHealth": true
         },
+        {
+          "EnemyType": [
+            "RW_Rot",
+            "RW_Floater"
+          ],
+          "LeaderType": "RW_HamFister",
+          "PatrolSize": 4,
+          "MaxPatrols": 2,
+          "MaxPatrolsLimited": 2,
+          "PatrolCadence": 10.0,
+          "PatrolCadenceLimited": 10.0,
+          "IFFUsed": 3,
+          "SwarmPlayer": false,
+          "AssualtSpeed": "Walking",
+          "IsBoss": false,
+          "DropChance": 1.00,
+          "DropsHealth": true
+        }
+        ,
         {
           "EnemyType": [
             "RW_Rot"
           ],
-          "LeaderType": "RW_Floater",
-          "PatrolSize": 4,
-          "MaxPatrols": 4,
-          "MaxPatrolsLimited": 4,
-          "PatrolCadence": 25.0,
-          "PatrolCadenceLimited": 25.0,
+          "LeaderType": "RW_RedLumberjack",
+          "PatrolSize": 1,
+          "MaxPatrols": 1,
+          "MaxPatrolsLimited": 1,
+          "PatrolCadence": 10.0,
+          "PatrolCadenceLimited": 10.0,
           "IFFUsed": 3,
           "SwarmPlayer": false,
           "AssualtSpeed": "Walking",
           "IsBoss": false,
-          "DropChance": 0.50,
-          "DropsHealth": true
-        }
-      ]
-    },
-    {
-      "NumOverrideTokensForHold": 9,
-      "MinSupplyPoints": 1,
-      "MaxSupplyPoints": 1,
-      "MinConstructors": 1,
-      "MaxConstructors": 1,
-      "MinPanels": 1,
-      "MaxPanels": 1,
-      "MinBoxesSpawned": 2,
-      "MaxBoxesSpawned": 5,
-      "MinTokensPerSupply": 0,
-      "MaxTokensPerSupply": 4,
-      "BoxTokenChance": 0.50,
-      "BoxHealthChance": 0.50,
-      "PossiblePanelTypes": [
-        "Recycler"
-      ],
-      "TakeChallenge": {
-        "TurretType": "SMG",
-        "EnemyType": "MountainMeat_Rifle",
-        "NumTurrets": 0,
-        "NumGuards": 5,
-        "IFFUsed": 1
-      },
-      "HoldPhases": [
-        {
-          "Encryptions": [
-            "Static"
-          ],
-          "MinTargets": 1,
-          "MaxTargets": 1,
-          "MinTargetsLimited": 1,
-          "MaxTargetsLimited": 1,
-          "EnemyType": [
-            "MountainMeat_Pistol",
-            "MountainMeat_SMG"
-          ],
-          "LeaderType": "MountainMeat_Rifle",
-          "MinEnemies": 5,
-          "MaxEnemies": 5,
-          "MaxEnemiesAlive": 10,
-          "MaxDirections": 2,
-          "SpawnCadence": 20.0,
-          "ScanTime": 120.0,
-          "WarmupTime": 7.0,
-          "IFFUsed": 1,
-          "GrenadeChance": 0.0,
-          "GrenadeType": "Sosiggrenade_Flash",
-          "SwarmPlayer": false
-        }
-      ],
-      "SupplyChallenge": {
-        "TurretType": "SMG",
-        "EnemyType": "MountainMeat_Rifle",
-        "NumTurrets": 0,
-        "NumGuards": 4,
-        "IFFUsed": 1
-      },
-      "Patrols": [
-        {
-          "EnemyType": [
-            "MountainMeat_Pistol",
-            "MountainMeat_SMG"
-          ],
-          "LeaderType": "MountainMeat_Rifle",
-          "PatrolSize": 5,
-          "MaxPatrols": 5,
-          "MaxPatrolsLimited": 5,
-          "PatrolCadence": 25.0,
-          "PatrolCadenceLimited": 25.0,
-          "IFFUsed": 1,
-          "SwarmPlayer": false,
-          "AssualtSpeed": "Walking",
-          "IsBoss": false,
-          "DropChance": 0.50,
-          "DropsHealth": true
-        },
-        {
-          "EnemyType": [
-            "RW_Rot",
-            "RW_Floater"
-          ],
-          "LeaderType": "RW_Beefkicker",
-          "PatrolSize": 5,
-          "MaxPatrols": 5,
-          "MaxPatrolsLimited": 5,
-          "PatrolCadence": 25.0,
-          "PatrolCadenceLimited": 25.0,
-          "IFFUsed": 3,
-          "SwarmPlayer": false,
-          "AssualtSpeed": "Walking",
-          "IsBoss": false,
-          "DropChance": 0.50,
-          "DropsHealth": true
-        }
-      ]
-    },
-    {
-      "NumOverrideTokensForHold": 9,
-      "MinSupplyPoints": 1,
-      "MaxSupplyPoints": 1,
-      "MinConstructors": 1,
-      "MaxConstructors": 1,
-      "MinPanels": 1,
-      "MaxPanels": 1,
-      "MinBoxesSpawned": 2,
-      "MaxBoxesSpawned": 5,
-      "MinTokensPerSupply": 0,
-      "MaxTokensPerSupply": 4,
-      "BoxTokenChance": 0.50,
-      "BoxHealthChance": 0.50,
-      "PossiblePanelTypes": [
-        "Recycler"
-      ],
-      "TakeChallenge": {
-        "TurretType": "SMG",
-        "EnemyType": "MountainMeat_SMG",
-        "NumTurrets": 0,
-        "NumGuards": 6,
-        "IFFUsed": 1
-      },
-      "HoldPhases": [
-        {
-          "Encryptions": [
-            "Static"
-          ],
-          "MinTargets": 1,
-          "MaxTargets": 1,
-          "MinTargetsLimited": 1,
-          "MaxTargetsLimited": 1,
-          "EnemyType": [
-            "MountainMeat_Pistol",
-            "MountainMeat_SMG",
-            "MountainMeat_Rifle"
-          ],
-          "LeaderType": "MountainMeat_Shotgun",
-          "MinEnemies": 6,
-          "MaxEnemies": 6,
-          "MaxEnemiesAlive": 12,
-          "MaxDirections": 3,
-          "SpawnCadence": 20.0,
-          "ScanTime": 120.0,
-          "WarmupTime": 7.0,
-          "IFFUsed": 1,
-          "GrenadeChance": 0.0,
-          "GrenadeType": "Sosiggrenade_Flash",
-          "SwarmPlayer": false
-        }
-      ],
-      "SupplyChallenge": {
-        "TurretType": "SMG",
-        "EnemyType": "MountainMeat_Shotgun",
-        "NumTurrets": 0,
-        "NumGuards": 4,
-        "IFFUsed": 1
-      },
-      "Patrols": [
-        {
-          "EnemyType": [
-            "MountainMeat_Pistol",
-            "MountainMeat_SMG",
-            "MountainMeat_Rifle"
-          ],
-          "LeaderType": "MountainMeat_Shotgun",
-          "PatrolSize": 5,
-          "MaxPatrols": 6,
-          "MaxPatrolsLimited": 6,
-          "PatrolCadence": 25.0,
-          "PatrolCadenceLimited": 25.0,
-          "IFFUsed": 1,
-          "SwarmPlayer": false,
-          "AssualtSpeed": "Walking",
-          "IsBoss": false,
-          "DropChance": 0.50,
-          "DropsHealth": true
-        },
-        {
-          "EnemyType": [
-            "RW_Rot",
-            "RW_Floater"
-          ],
-          "LeaderType": "RW_Beefkicker",
-          "PatrolSize": 5,
-          "MaxPatrols": 6,
-          "MaxPatrolsLimited": 6,
-          "PatrolCadence": 25.0,
-          "PatrolCadenceLimited": 25.0,
-          "IFFUsed": 3,
-          "SwarmPlayer": false,
-          "AssualtSpeed": "Walking",
-          "IsBoss": false,
-          "DropChance": 0.50,
-          "DropsHealth": true
-        }
-      ]
-    },
-    {
-      "NumOverrideTokensForHold": 10,
-      "MinSupplyPoints": 1,
-      "MaxSupplyPoints": 1,
-      "MinConstructors": 1,
-      "MaxConstructors": 1,
-      "MinPanels": 1,
-      "MaxPanels": 1,
-      "MinBoxesSpawned": 2,
-      "MaxBoxesSpawned": 5,
-      "MinTokensPerSupply": 0,
-      "MaxTokensPerSupply": 4,
-      "BoxTokenChance": 0.50,
-      "BoxHealthChance": 0.50,
-      "PossiblePanelTypes": [
-        "Recycler"
-      ],
-      "TakeChallenge": {
-        "TurretType": "SMG",
-        "EnemyType": "RW_Rot",
-        "NumTurrets": 0,
-        "NumGuards": 8,
-        "IFFUsed": 3
-      },
-      "HoldPhases": [
-        {
-          "Encryptions": [
-            "Static"
-          ],
-          "MinTargets": 1,
-          "MaxTargets": 1,
-          "MinTargetsLimited": 1,
-          "MaxTargetsLimited": 1,
-          "EnemyType": [
-            "RW_Rot",
-            "RW_Floater"
-          ],
-          "LeaderType": "RW_Beefkicker",
-          "MinEnemies": 7,
-          "MaxEnemies": 7,
-          "MaxEnemiesAlive": 14,
-          "MaxDirections": 3,
-          "SpawnCadence": 20.0,
-          "ScanTime": 180.0,
-          "WarmupTime": 7.0,
-          "IFFUsed": 3,
-          "GrenadeChance": 0.0,
-          "GrenadeType": "Sosiggrenade_Flash",
-          "SwarmPlayer": false
-        }
-      ],
-      "SupplyChallenge": {
-        "TurretType": "SMG",
-        "EnemyType": "RW_Rot",
-        "NumTurrets": 0,
-        "NumGuards": 6,
-        "IFFUsed": 3
-      },
-      "Patrols": [
-        {
-          "EnemyType": [
-            "MountainMeat_Pistol",
-            "MountainMeat_SMG",
-            "MountainMeat_Rifle"
-          ],
-          "LeaderType": "MountainMeat_Shotgun",
-          "PatrolSize": 3,
-          "MaxPatrols": 3,
-          "MaxPatrolsLimited": 3,
-          "PatrolCadence": 25.0,
-          "PatrolCadenceLimited": 25.0,
-          "IFFUsed": 1,
-          "SwarmPlayer": false,
-          "AssualtSpeed": "Walking",
-          "IsBoss": false,
-          "DropChance": 0.50,
-          "DropsHealth": true
-        },
-        {
-          "EnemyType": [
-            "RW_Rot",
-            "RW_Floater"
-          ],
-          "LeaderType": "RW_Beefkicker",
-          "PatrolSize": 5,
-          "MaxPatrols": 8,
-          "MaxPatrolsLimited": 8,
-          "PatrolCadence": 25.0,
-          "PatrolCadenceLimited": 25.0,
-          "IFFUsed": 3,
-          "SwarmPlayer": false,
-          "AssualtSpeed": "Walking",
-          "IsBoss": false,
-          "DropChance": 0.50,
-          "DropsHealth": true
-        }
-      ]
-    },
-    {
-      "NumOverrideTokensForHold": 10,
-      "MinSupplyPoints": 1,
-      "MaxSupplyPoints": 1,
-      "MinConstructors": 1,
-      "MaxConstructors": 1,
-      "MinPanels": 1,
-      "MaxPanels": 1,
-      "MinBoxesSpawned": 2,
-      "MaxBoxesSpawned": 5,
-      "MinTokensPerSupply": 0,
-      "MaxTokensPerSupply": 4,
-      "BoxTokenChance": 0.50,
-      "BoxHealthChance": 0.50,
-      "PossiblePanelTypes": [
-        "Recycler"
-      ],
-      "TakeChallenge": {
-        "TurretType": "SMG",
-        "EnemyType": "RWP_PacSquad_Trooper",
-        "NumTurrets": 0,
-        "NumGuards": 6,
-        "IFFUsed": 1
-      },
-      "HoldPhases": [
-        {
-          "Encryptions": [
-            "Static"
-          ],
-          "MinTargets": 1,
-          "MaxTargets": 1,
-          "MinTargetsLimited": 1,
-          "MaxTargetsLimited": 1,
-          "EnemyType": [
-            "RWP_PacSquad_Flanker",
-            "RWP_PacSquad_Sniper",
-            "RWP_PacSquad_Trooper"
-          ],
-          "LeaderType": "RWP_PacSquad_Commander",
-          "MinEnemies": 7,
-          "MaxEnemies": 7,
-          "MaxEnemiesAlive": 14,
-          "MaxDirections": 4,
-          "SpawnCadence": 20.0,
-          "ScanTime": 180.0,
-          "WarmupTime": 7.0,
-          "IFFUsed": 1,
-          "GrenadeChance": 0.0,
-          "GrenadeType": "Sosiggrenade_Flash",
-          "SwarmPlayer": false
-        }
-      ],
-      "SupplyChallenge": {
-        "TurretType": "SMG",
-        "EnemyType": "RWP_PacSquad_Trooper",
-        "NumTurrets": 0,
-        "NumGuards": 5,
-        "IFFUsed": 1
-      },
-      "Patrols": [
-        {
-          "EnemyType": [
-            "RWP_PacSquad_Flanker",
-            "RWP_PacSquad_Sniper",
-            "RWP_PacSquad_Trooper"
-          ],
-          "LeaderType": "RWP_PacSquad_Commander",
-          "PatrolSize": 5,
-          "MaxPatrols": 8,
-          "MaxPatrolsLimited": 8,
-          "PatrolCadence": 25.0,
-          "PatrolCadenceLimited": 25.0,
-          "IFFUsed": 1,
-          "SwarmPlayer": false,
-          "AssualtSpeed": "Walking",
-          "IsBoss": false,
-          "DropChance": 0.50,
-          "DropsHealth": true
-        },
-        {
-          "EnemyType": [
-            "RW_Rot",
-            "RW_Floater"
-          ],
-          "LeaderType": "RW_Beefkicker",
-          "PatrolSize": 5,
-          "MaxPatrols": 8,
-          "MaxPatrolsLimited": 8,
-          "PatrolCadence": 25.0,
-          "PatrolCadenceLimited": 25.0,
-          "IFFUsed": 3,
-          "SwarmPlayer": false,
-          "AssualtSpeed": "Walking",
-          "IsBoss": false,
-          "DropChance": 0.50,
+          "DropChance": 1.00,
           "DropsHealth": true
         }
       ]
@@ -1044,7 +758,7 @@
   ],
   "LevelsEndless": [
     {
-      "NumOverrideTokensForHold": 7,
+      "NumOverrideTokensForHold": 10,
       "MinSupplyPoints": 1,
       "MaxSupplyPoints": 1,
       "MinConstructors": 1,
@@ -1052,7 +766,7 @@
       "MinPanels": 1,
       "MaxPanels": 1,
       "MinBoxesSpawned": 2,
-      "MaxBoxesSpawned": 5,
+      "MaxBoxesSpawned": 6,
       "MinTokensPerSupply": 0,
       "MaxTokensPerSupply": 4,
       "BoxTokenChance": 0.50,
@@ -1064,7 +778,7 @@
         "TurretType": "SMG",
         "EnemyType": "MountainMeat_Melee",
         "NumTurrets": 0,
-        "NumGuards": 3,
+        "NumGuards": 2,
         "IFFUsed": 1
       },
       "HoldPhases": [
@@ -1080,11 +794,11 @@
             "MountainMeat_Melee"
           ],
           "LeaderType": "MountainMeat_Melee",
-          "MinEnemies": 1,
-          "MaxEnemies": 1,
-          "MaxEnemiesAlive": 3,
+          "MinEnemies": 2,
+          "MaxEnemies": 2,
+          "MaxEnemiesAlive": 4,
           "MaxDirections": 1,
-          "SpawnCadence": 10.0,
+          "SpawnCadence": 20.0,
           "ScanTime": 30.0,
           "WarmupTime": 7.0,
           "IFFUsed": 1,
@@ -1106,39 +820,22 @@
             "MountainMeat_Melee"
           ],
           "LeaderType": "MountainMeat_Melee",
-          "PatrolSize": 1,
-          "MaxPatrols": 2,
-          "MaxPatrolsLimited": 2,
-          "PatrolCadence": 25.0,
-          "PatrolCadenceLimited": 25.0,
+          "PatrolSize": 2,
+          "MaxPatrols": 3,
+          "MaxPatrolsLimited": 3,
+          "PatrolCadence": 10.0,
+          "PatrolCadenceLimited": 10.0,
           "IFFUsed": 1,
           "SwarmPlayer": false,
           "AssualtSpeed": "Walking",
           "IsBoss": false,
-          "DropChance": 0.50,
-          "DropsHealth": true
-        },
-        {
-          "EnemyType": [
-            "RW_Rot"
-          ],
-          "LeaderType": "RW_Rot",
-          "PatrolSize": 1,
-          "MaxPatrols": 2,
-          "MaxPatrolsLimited": 2,
-          "PatrolCadence": 25.0,
-          "PatrolCadenceLimited": 25.0,
-          "IFFUsed": 3,
-          "SwarmPlayer": false,
-          "AssualtSpeed": "Walking",
-          "IsBoss": false,
-          "DropChance": 0.50,
+          "DropChance": 1.00,
           "DropsHealth": true
         }
       ]
     },
     {
-      "NumOverrideTokensForHold": 7,
+      "NumOverrideTokensForHold": 10,
       "MinSupplyPoints": 1,
       "MaxSupplyPoints": 1,
       "MinConstructors": 1,
@@ -1146,102 +843,7 @@
       "MinPanels": 1,
       "MaxPanels": 1,
       "MinBoxesSpawned": 2,
-      "MaxBoxesSpawned": 5,
-      "MinTokensPerSupply": 0,
-      "MaxTokensPerSupply": 4,
-      "BoxTokenChance": 0.50,
-      "BoxHealthChance": 0.50,
-      "PossiblePanelTypes": [
-        "Recycler"
-      ],
-      "TakeChallenge": {
-        "TurretType": "SMG",
-        "EnemyType": "MountainMeat_Melee",
-        "NumTurrets": 0,
-        "NumGuards": 3,
-        "IFFUsed": 1
-      },
-      "HoldPhases": [
-        {
-          "Encryptions": [
-            "Static"
-          ],
-          "MinTargets": 1,
-          "MaxTargets": 1,
-          "MinTargetsLimited": 1,
-          "MaxTargetsLimited": 1,
-          "EnemyType": [
-            "MountainMeat_Melee",
-            "MountainMeat_Pistol"
-          ],
-          "LeaderType": "MountainMeat_Pistol",
-          "MinEnemies": 2,
-          "MaxEnemies": 2,
-          "MaxEnemiesAlive": 4,
-          "MaxDirections": 1,
-          "SpawnCadence": 15.0,
-          "ScanTime": 60.0,
-          "WarmupTime": 7.0,
-          "IFFUsed": 1,
-          "GrenadeChance": 0.0,
-          "GrenadeType": "Sosiggrenade_Flash",
-          "SwarmPlayer": false
-        }
-      ],
-      "SupplyChallenge": {
-        "TurretType": "SMG",
-        "EnemyType": "MountainMeat_Melee",
-        "NumTurrets": 0,
-        "NumGuards": 3,
-        "IFFUsed": 1
-      },
-      "Patrols": [
-        {
-          "EnemyType": [
-            "MountainMeat_Melee"
-          ],
-          "LeaderType": "MountainMeat_Melee",
-          "PatrolSize": 2,
-          "MaxPatrols": 3,
-          "MaxPatrolsLimited": 3,
-          "PatrolCadence": 25.0,
-          "PatrolCadenceLimited": 25.0,
-          "IFFUsed": 1,
-          "SwarmPlayer": false,
-          "AssualtSpeed": "Walking",
-          "IsBoss": false,
-          "DropChance": 0.50,
-          "DropsHealth": true
-        },
-        {
-          "EnemyType": [
-            "RW_Rot"
-          ],
-          "LeaderType": "RW_Rot",
-          "PatrolSize": 2,
-          "MaxPatrols": 3,
-          "MaxPatrolsLimited": 3,
-          "PatrolCadence": 25.0,
-          "PatrolCadenceLimited": 25.0,
-          "IFFUsed": 3,
-          "SwarmPlayer": false,
-          "AssualtSpeed": "Walking",
-          "IsBoss": false,
-          "DropChance": 0.50,
-          "DropsHealth": true
-        }
-      ]
-    },
-    {
-      "NumOverrideTokensForHold": 8,
-      "MinSupplyPoints": 1,
-      "MaxSupplyPoints": 1,
-      "MinConstructors": 1,
-      "MaxConstructors": 1,
-      "MinPanels": 1,
-      "MaxPanels": 1,
-      "MinBoxesSpawned": 2,
-      "MaxBoxesSpawned": 5,
+      "MaxBoxesSpawned": 6,
       "MinTokensPerSupply": 0,
       "MaxTokensPerSupply": 4,
       "BoxTokenChance": 0.50,
@@ -1253,7 +855,7 @@
         "TurretType": "SMG",
         "EnemyType": "MountainMeat_Pistol",
         "NumTurrets": 0,
-        "NumGuards": 3,
+        "NumGuards": 4,
         "IFFUsed": 1
       },
       "HoldPhases": [
@@ -1266,14 +868,13 @@
           "MinTargetsLimited": 1,
           "MaxTargetsLimited": 1,
           "EnemyType": [
-            "MountainMeat_Melee",
             "MountainMeat_Pistol"
           ],
           "LeaderType": "MountainMeat_Pistol",
           "MinEnemies": 3,
           "MaxEnemies": 3,
           "MaxEnemiesAlive": 6,
-          "MaxDirections": 1,
+          "MaxDirections": 3,
           "SpawnCadence": 20.0,
           "ScanTime": 90.0,
           "WarmupTime": 7.0,
@@ -1293,43 +894,43 @@
       "Patrols": [
         {
           "EnemyType": [
-            "MountainMeat_Melee",
             "MountainMeat_Pistol"
           ],
           "LeaderType": "MountainMeat_Pistol",
-          "PatrolSize": 3,
+          "PatrolSize": 4,
           "MaxPatrols": 3,
           "MaxPatrolsLimited": 3,
-          "PatrolCadence": 25.0,
-          "PatrolCadenceLimited": 25.0,
+          "PatrolCadence": 10.0,
+          "PatrolCadenceLimited": 10.0,
           "IFFUsed": 1,
           "SwarmPlayer": false,
           "AssualtSpeed": "Walking",
           "IsBoss": false,
-          "DropChance": 0.50,
+          "DropChance": 1.00,
           "DropsHealth": true
         },
         {
           "EnemyType": [
-            "RW_Rot"
+            "RW_Rot",
+            "RW_Floater"
           ],
           "LeaderType": "RW_Floater",
-          "PatrolSize": 3,
-          "MaxPatrols": 3,
-          "MaxPatrolsLimited": 3,
-          "PatrolCadence": 25.0,
-          "PatrolCadenceLimited": 25.0,
+          "PatrolSize": 4,
+          "MaxPatrols": 2,
+          "MaxPatrolsLimited": 2,
+          "PatrolCadence": 10.0,
+          "PatrolCadenceLimited": 10.0,
           "IFFUsed": 3,
           "SwarmPlayer": false,
           "AssualtSpeed": "Walking",
           "IsBoss": false,
-          "DropChance": 0.50,
+          "DropChance": 1.00,
           "DropsHealth": true
         }
       ]
     },
     {
-      "NumOverrideTokensForHold": 8,
+      "NumOverrideTokensForHold": 10,
       "MinSupplyPoints": 1,
       "MaxSupplyPoints": 1,
       "MinConstructors": 1,
@@ -1337,7 +938,7 @@
       "MinPanels": 1,
       "MaxPanels": 1,
       "MinBoxesSpawned": 2,
-      "MaxBoxesSpawned": 5,
+      "MaxBoxesSpawned": 6,
       "MinTokensPerSupply": 0,
       "MaxTokensPerSupply": 4,
       "BoxTokenChance": 0.50,
@@ -1349,7 +950,7 @@
         "TurretType": "SMG",
         "EnemyType": "MountainMeat_SMG",
         "NumTurrets": 0,
-        "NumGuards": 3,
+        "NumGuards": 4,
         "IFFUsed": 1
       },
       "HoldPhases": [
@@ -1362,13 +963,15 @@
           "MinTargetsLimited": 1,
           "MaxTargetsLimited": 1,
           "EnemyType": [
-            "MountainMeat_Pistol"
+            "MountainMeat_Pistol",
+            "MountainMeat_SMG",
+            "MountainMeat_Shotgun"
           ],
-          "LeaderType": "MountainMeat_SMG",
+          "LeaderType": "MountainMeat_Rifle",
           "MinEnemies": 4,
           "MaxEnemies": 4,
           "MaxEnemiesAlive": 8,
-          "MaxDirections": 2,
+          "MaxDirections": 3,
           "SpawnCadence": 20.0,
           "ScanTime": 90.0,
           "WarmupTime": 7.0,
@@ -1380,50 +983,53 @@
       ],
       "SupplyChallenge": {
         "TurretType": "SMG",
-        "EnemyType": "MountainMeat_Pistol",
+        "EnemyType": "RW_Rot",
         "NumTurrets": 0,
-        "NumGuards": 4,
-        "IFFUsed": 1
+        "NumGuards": 6,
+        "IFFUsed": 3
       },
       "Patrols": [
         {
           "EnemyType": [
-            "MountainMeat_Pistol"
+            "MountainMeat_Pistol",
+            "MountainMeat_SMG",
+            "MountainMeat_Shotgun"
           ],
-          "LeaderType": "MountainMeat_SMG",
+          "LeaderType": "MountainMeat_Rifle",
           "PatrolSize": 4,
-          "MaxPatrols": 4,
-          "MaxPatrolsLimited": 4,
-          "PatrolCadence": 25.0,
-          "PatrolCadenceLimited": 25.0,
+          "MaxPatrols": 3,
+          "MaxPatrolsLimited": 3,
+          "PatrolCadence": 10.0,
+          "PatrolCadenceLimited": 10.0,
           "IFFUsed": 1,
           "SwarmPlayer": false,
           "AssualtSpeed": "Walking",
           "IsBoss": false,
-          "DropChance": 0.50,
+          "DropChance": 1.00,
           "DropsHealth": true
         },
         {
           "EnemyType": [
-            "RW_Rot"
+            "RW_Rot",
+            "RW_Floater"
           ],
-          "LeaderType": "RW_Floater",
+          "LeaderType": "RW_HamFister",
           "PatrolSize": 4,
-          "MaxPatrols": 4,
-          "MaxPatrolsLimited": 4,
-          "PatrolCadence": 25.0,
-          "PatrolCadenceLimited": 25.0,
+          "MaxPatrols": 2,
+          "MaxPatrolsLimited": 2,
+          "PatrolCadence": 10.0,
+          "PatrolCadenceLimited": 10.0,
           "IFFUsed": 3,
           "SwarmPlayer": false,
           "AssualtSpeed": "Walking",
           "IsBoss": false,
-          "DropChance": 0.50,
+          "DropChance": 1.00,
           "DropsHealth": true
         }
       ]
     },
     {
-      "NumOverrideTokensForHold": 9,
+      "NumOverrideTokensForHold": 12,
       "MinSupplyPoints": 1,
       "MaxSupplyPoints": 1,
       "MinConstructors": 1,
@@ -1431,7 +1037,7 @@
       "MinPanels": 1,
       "MaxPanels": 1,
       "MinBoxesSpawned": 2,
-      "MaxBoxesSpawned": 5,
+      "MaxBoxesSpawned": 6,
       "MinTokensPerSupply": 0,
       "MaxTokensPerSupply": 4,
       "BoxTokenChance": 0.50,
@@ -1441,10 +1047,10 @@
       ],
       "TakeChallenge": {
         "TurretType": "SMG",
-        "EnemyType": "MountainMeat_Rifle",
+        "EnemyType": "RW_Floater",
         "NumTurrets": 0,
-        "NumGuards": 5,
-        "IFFUsed": 1
+        "NumGuards": 6,
+        "IFFUsed": 3
       },
       "HoldPhases": [
         {
@@ -1456,600 +1062,18 @@
           "MinTargetsLimited": 1,
           "MaxTargetsLimited": 1,
           "EnemyType": [
-            "MountainMeat_Pistol",
-            "MountainMeat_SMG"
+            "RW_Rot",
+            "RW_Floater"
           ],
-          "LeaderType": "MountainMeat_Rifle",
+          "LeaderType": "RW_HamFister",
           "MinEnemies": 5,
           "MaxEnemies": 5,
           "MaxEnemiesAlive": 10,
-          "MaxDirections": 2,
-          "SpawnCadence": 20.0,
-          "ScanTime": 120.0,
-          "WarmupTime": 7.0,
-          "IFFUsed": 1,
-          "GrenadeChance": 0.0,
-          "GrenadeType": "Sosiggrenade_Flash",
-          "SwarmPlayer": false
-        }
-      ],
-      "SupplyChallenge": {
-        "TurretType": "SMG",
-        "EnemyType": "MountainMeat_Rifle",
-        "NumTurrets": 0,
-        "NumGuards": 4,
-        "IFFUsed": 1
-      },
-      "Patrols": [
-        {
-          "EnemyType": [
-            "MountainMeat_Pistol",
-            "MountainMeat_SMG"
-          ],
-          "LeaderType": "MountainMeat_Rifle",
-          "PatrolSize": 5,
-          "MaxPatrols": 5,
-          "MaxPatrolsLimited": 5,
-          "PatrolCadence": 25.0,
-          "PatrolCadenceLimited": 25.0,
-          "IFFUsed": 1,
-          "SwarmPlayer": false,
-          "AssualtSpeed": "Walking",
-          "IsBoss": false,
-          "DropChance": 0.50,
-          "DropsHealth": true
-        },
-        {
-          "EnemyType": [
-            "RW_Rot",
-            "RW_Floater"
-          ],
-          "LeaderType": "RW_Beefkicker",
-          "PatrolSize": 5,
-          "MaxPatrols": 5,
-          "MaxPatrolsLimited": 5,
-          "PatrolCadence": 25.0,
-          "PatrolCadenceLimited": 25.0,
-          "IFFUsed": 3,
-          "SwarmPlayer": false,
-          "AssualtSpeed": "Walking",
-          "IsBoss": false,
-          "DropChance": 0.50,
-          "DropsHealth": true
-        }
-      ]
-    },
-    {
-      "NumOverrideTokensForHold": 9,
-      "MinSupplyPoints": 1,
-      "MaxSupplyPoints": 1,
-      "MinConstructors": 1,
-      "MaxConstructors": 1,
-      "MinPanels": 1,
-      "MaxPanels": 1,
-      "MinBoxesSpawned": 2,
-      "MaxBoxesSpawned": 5,
-      "MinTokensPerSupply": 0,
-      "MaxTokensPerSupply": 4,
-      "BoxTokenChance": 0.50,
-      "BoxHealthChance": 0.50,
-      "PossiblePanelTypes": [
-        "Recycler"
-      ],
-      "TakeChallenge": {
-        "TurretType": "SMG",
-        "EnemyType": "MountainMeat_SMG",
-        "NumTurrets": 0,
-        "NumGuards": 6,
-        "IFFUsed": 1
-      },
-      "HoldPhases": [
-        {
-          "Encryptions": [
-            "Static"
-          ],
-          "MinTargets": 1,
-          "MaxTargets": 1,
-          "MinTargetsLimited": 1,
-          "MaxTargetsLimited": 1,
-          "EnemyType": [
-            "MountainMeat_Pistol",
-            "MountainMeat_SMG",
-            "MountainMeat_Rifle"
-          ],
-          "LeaderType": "MountainMeat_Shotgun",
-          "MinEnemies": 6,
-          "MaxEnemies": 6,
-          "MaxEnemiesAlive": 12,
           "MaxDirections": 3,
-          "SpawnCadence": 20.0,
-          "ScanTime": 120.0,
-          "WarmupTime": 7.0,
-          "IFFUsed": 1,
-          "GrenadeChance": 0.0,
-          "GrenadeType": "Sosiggrenade_Flash",
-          "SwarmPlayer": false
-        }
-      ],
-      "SupplyChallenge": {
-        "TurretType": "SMG",
-        "EnemyType": "MountainMeat_Shotgun",
-        "NumTurrets": 0,
-        "NumGuards": 4,
-        "IFFUsed": 1
-      },
-      "Patrols": [
-        {
-          "EnemyType": [
-            "MountainMeat_Pistol",
-            "MountainMeat_SMG",
-            "MountainMeat_Rifle"
-          ],
-          "LeaderType": "MountainMeat_Shotgun",
-          "PatrolSize": 5,
-          "MaxPatrols": 6,
-          "MaxPatrolsLimited": 6,
-          "PatrolCadence": 25.0,
-          "PatrolCadenceLimited": 25.0,
-          "IFFUsed": 1,
-          "SwarmPlayer": false,
-          "AssualtSpeed": "Walking",
-          "IsBoss": false,
-          "DropChance": 0.50,
-          "DropsHealth": true
-        },
-        {
-          "EnemyType": [
-            "RW_Rot",
-            "RW_Floater"
-          ],
-          "LeaderType": "RW_Beefkicker",
-          "PatrolSize": 5,
-          "MaxPatrols": 6,
-          "MaxPatrolsLimited": 6,
-          "PatrolCadence": 25.0,
-          "PatrolCadenceLimited": 25.0,
-          "IFFUsed": 3,
-          "SwarmPlayer": false,
-          "AssualtSpeed": "Walking",
-          "IsBoss": false,
-          "DropChance": 0.50,
-          "DropsHealth": true
-        }
-      ]
-    },
-    {
-      "NumOverrideTokensForHold": 10,
-      "MinSupplyPoints": 1,
-      "MaxSupplyPoints": 1,
-      "MinConstructors": 1,
-      "MaxConstructors": 1,
-      "MinPanels": 1,
-      "MaxPanels": 1,
-      "MinBoxesSpawned": 2,
-      "MaxBoxesSpawned": 5,
-      "MinTokensPerSupply": 0,
-      "MaxTokensPerSupply": 4,
-      "BoxTokenChance": 0.50,
-      "BoxHealthChance": 0.50,
-      "PossiblePanelTypes": [
-        "Recycler"
-      ],
-      "TakeChallenge": {
-        "TurretType": "SMG",
-        "EnemyType": "RW_Rot",
-        "NumTurrets": 0,
-        "NumGuards": 8,
-        "IFFUsed": 3
-      },
-      "HoldPhases": [
-        {
-          "Encryptions": [
-            "Static"
-          ],
-          "MinTargets": 1,
-          "MaxTargets": 1,
-          "MinTargetsLimited": 1,
-          "MaxTargetsLimited": 1,
-          "EnemyType": [
-            "RW_Rot",
-            "RW_Floater"
-          ],
-          "LeaderType": "RW_Beefkicker",
-          "MinEnemies": 7,
-          "MaxEnemies": 7,
-          "MaxEnemiesAlive": 14,
-          "MaxDirections": 3,
-          "SpawnCadence": 20.0,
-          "ScanTime": 180.0,
-          "WarmupTime": 7.0,
-          "IFFUsed": 3,
-          "GrenadeChance": 0.0,
-          "GrenadeType": "Sosiggrenade_Flash",
-          "SwarmPlayer": false
-        }
-      ],
-      "SupplyChallenge": {
-        "TurretType": "SMG",
-        "EnemyType": "RW_Rot",
-        "NumTurrets": 0,
-        "NumGuards": 6,
-        "IFFUsed": 3
-      },
-      "Patrols": [
-        {
-          "EnemyType": [
-            "MountainMeat_Pistol",
-            "MountainMeat_SMG",
-            "MountainMeat_Rifle"
-          ],
-          "LeaderType": "MountainMeat_Shotgun",
-          "PatrolSize": 3,
-          "MaxPatrols": 3,
-          "MaxPatrolsLimited": 3,
-          "PatrolCadence": 25.0,
-          "PatrolCadenceLimited": 25.0,
-          "IFFUsed": 1,
-          "SwarmPlayer": false,
-          "AssualtSpeed": "Walking",
-          "IsBoss": false,
-          "DropChance": 0.50,
-          "DropsHealth": true
-        },
-        {
-          "EnemyType": [
-            "RW_Rot",
-            "RW_Floater"
-          ],
-          "LeaderType": "RW_Beefkicker",
-          "PatrolSize": 5,
-          "MaxPatrols": 8,
-          "MaxPatrolsLimited": 8,
-          "PatrolCadence": 25.0,
-          "PatrolCadenceLimited": 25.0,
-          "IFFUsed": 3,
-          "SwarmPlayer": false,
-          "AssualtSpeed": "Walking",
-          "IsBoss": false,
-          "DropChance": 0.50,
-          "DropsHealth": true
-        }
-      ]
-    },
-    {
-      "NumOverrideTokensForHold": 10,
-      "MinSupplyPoints": 1,
-      "MaxSupplyPoints": 1,
-      "MinConstructors": 1,
-      "MaxConstructors": 1,
-      "MinPanels": 1,
-      "MaxPanels": 1,
-      "MinBoxesSpawned": 2,
-      "MaxBoxesSpawned": 5,
-      "MinTokensPerSupply": 0,
-      "MaxTokensPerSupply": 4,
-      "BoxTokenChance": 0.50,
-      "BoxHealthChance": 0.50,
-      "PossiblePanelTypes": [
-        "Recycler"
-      ],
-      "TakeChallenge": {
-        "TurretType": "SMG",
-        "EnemyType": "RWP_PacSquad_Trooper",
-        "NumTurrets": 0,
-        "NumGuards": 6,
-        "IFFUsed": 1
-      },
-      "HoldPhases": [
-        {
-          "Encryptions": [
-            "Static"
-          ],
-          "MinTargets": 1,
-          "MaxTargets": 1,
-          "MinTargetsLimited": 1,
-          "MaxTargetsLimited": 1,
-          "EnemyType": [
-            "RWP_PacSquad_Flanker",
-            "RWP_PacSquad_Sniper",
-            "RWP_PacSquad_Trooper"
-          ],
-          "LeaderType": "RWP_PacSquad_Commander",
-          "MinEnemies": 7,
-          "MaxEnemies": 7,
-          "MaxEnemiesAlive": 14,
-          "MaxDirections": 4,
-          "SpawnCadence": 20.0,
-          "ScanTime": 180.0,
-          "WarmupTime": 7.0,
-          "IFFUsed": 1,
-          "GrenadeChance": 0.0,
-          "GrenadeType": "Sosiggrenade_Flash",
-          "SwarmPlayer": false
-        }
-      ],
-      "SupplyChallenge": {
-        "TurretType": "SMG",
-        "EnemyType": "RWP_PacSquad_Trooper",
-        "NumTurrets": 0,
-        "NumGuards": 5,
-        "IFFUsed": 1
-      },
-      "Patrols": [
-        {
-          "EnemyType": [
-            "RWP_PacSquad_Flanker",
-            "RWP_PacSquad_Sniper",
-            "RWP_PacSquad_Trooper"
-          ],
-          "LeaderType": "RWP_PacSquad_Commander",
-          "PatrolSize": 5,
-          "MaxPatrols": 8,
-          "MaxPatrolsLimited": 8,
-          "PatrolCadence": 25.0,
-          "PatrolCadenceLimited": 25.0,
-          "IFFUsed": 1,
-          "SwarmPlayer": false,
-          "AssualtSpeed": "Walking",
-          "IsBoss": false,
-          "DropChance": 0.50,
-          "DropsHealth": true
-        },
-        {
-          "EnemyType": [
-            "RW_Rot",
-            "RW_Floater"
-          ],
-          "LeaderType": "RW_Beefkicker",
-          "PatrolSize": 5,
-          "MaxPatrols": 8,
-          "MaxPatrolsLimited": 8,
-          "PatrolCadence": 25.0,
-          "PatrolCadenceLimited": 25.0,
-          "IFFUsed": 3,
-          "SwarmPlayer": false,
-          "AssualtSpeed": "Walking",
-          "IsBoss": false,
-          "DropChance": 0.50,
-          "DropsHealth": true
-        }
-      ]
-    },
-    {
-      "NumOverrideTokensForHold": 7,
-      "MinSupplyPoints": 1,
-      "MaxSupplyPoints": 1,
-      "MinConstructors": 1,
-      "MaxConstructors": 1,
-      "MinPanels": 1,
-      "MaxPanels": 1,
-      "MinBoxesSpawned": 2,
-      "MaxBoxesSpawned": 5,
-      "MinTokensPerSupply": 0,
-      "MaxTokensPerSupply": 4,
-      "BoxTokenChance": 0.50,
-      "BoxHealthChance": 0.50,
-      "PossiblePanelTypes": [
-        "Recycler"
-      ],
-      "TakeChallenge": {
-        "TurretType": "SMG",
-        "EnemyType": "MountainMeat_Melee",
-        "NumTurrets": 0,
-        "NumGuards": 3,
-        "IFFUsed": 1
-      },
-      "HoldPhases": [
-        {
-          "Encryptions": [
-            "Static"
-          ],
-          "MinTargets": 1,
-          "MaxTargets": 1,
-          "MinTargetsLimited": 1,
-          "MaxTargetsLimited": 1,
-          "EnemyType": [
-            "MountainMeat_Melee"
-          ],
-          "LeaderType": "MountainMeat_Melee",
-          "MinEnemies": 1,
-          "MaxEnemies": 1,
-          "MaxEnemiesAlive": 3,
-          "MaxDirections": 1,
-          "SpawnCadence": 10.0,
-          "ScanTime": 30.0,
-          "WarmupTime": 7.0,
-          "IFFUsed": 1,
-          "GrenadeChance": 0.0,
-          "GrenadeType": "Sosiggrenade_Flash",
-          "SwarmPlayer": false
-        }
-      ],
-      "SupplyChallenge": {
-        "TurretType": "SMG",
-        "EnemyType": "MountainMeat_Melee",
-        "NumTurrets": 0,
-        "NumGuards": 1,
-        "IFFUsed": 1
-      },
-      "Patrols": [
-        {
-          "EnemyType": [
-            "MountainMeat_Melee"
-          ],
-          "LeaderType": "MountainMeat_Melee",
-          "PatrolSize": 1,
-          "MaxPatrols": 2,
-          "MaxPatrolsLimited": 2,
-          "PatrolCadence": 25.0,
-          "PatrolCadenceLimited": 25.0,
-          "IFFUsed": 1,
-          "SwarmPlayer": false,
-          "AssualtSpeed": "Walking",
-          "IsBoss": false,
-          "DropChance": 0.50,
-          "DropsHealth": true
-        },
-        {
-          "EnemyType": [
-            "RW_Rot"
-          ],
-          "LeaderType": "RW_Rot",
-          "PatrolSize": 1,
-          "MaxPatrols": 2,
-          "MaxPatrolsLimited": 2,
-          "PatrolCadence": 25.0,
-          "PatrolCadenceLimited": 25.0,
-          "IFFUsed": 3,
-          "SwarmPlayer": false,
-          "AssualtSpeed": "Walking",
-          "IsBoss": false,
-          "DropChance": 0.50,
-          "DropsHealth": true
-        }
-      ]
-    },
-    {
-      "NumOverrideTokensForHold": 7,
-      "MinSupplyPoints": 1,
-      "MaxSupplyPoints": 1,
-      "MinConstructors": 1,
-      "MaxConstructors": 1,
-      "MinPanels": 1,
-      "MaxPanels": 1,
-      "MinBoxesSpawned": 2,
-      "MaxBoxesSpawned": 5,
-      "MinTokensPerSupply": 0,
-      "MaxTokensPerSupply": 4,
-      "BoxTokenChance": 0.50,
-      "BoxHealthChance": 0.50,
-      "PossiblePanelTypes": [
-        "Recycler"
-      ],
-      "TakeChallenge": {
-        "TurretType": "SMG",
-        "EnemyType": "MountainMeat_Melee",
-        "NumTurrets": 0,
-        "NumGuards": 3,
-        "IFFUsed": 1
-      },
-      "HoldPhases": [
-        {
-          "Encryptions": [
-            "Static"
-          ],
-          "MinTargets": 1,
-          "MaxTargets": 1,
-          "MinTargetsLimited": 1,
-          "MaxTargetsLimited": 1,
-          "EnemyType": [
-            "MountainMeat_Melee",
-            "MountainMeat_Pistol"
-          ],
-          "LeaderType": "MountainMeat_Pistol",
-          "MinEnemies": 2,
-          "MaxEnemies": 2,
-          "MaxEnemiesAlive": 4,
-          "MaxDirections": 1,
-          "SpawnCadence": 15.0,
-          "ScanTime": 60.0,
-          "WarmupTime": 7.0,
-          "IFFUsed": 1,
-          "GrenadeChance": 0.0,
-          "GrenadeType": "Sosiggrenade_Flash",
-          "SwarmPlayer": false
-        }
-      ],
-      "SupplyChallenge": {
-        "TurretType": "SMG",
-        "EnemyType": "MountainMeat_Melee",
-        "NumTurrets": 0,
-        "NumGuards": 3,
-        "IFFUsed": 1
-      },
-      "Patrols": [
-        {
-          "EnemyType": [
-            "MountainMeat_Melee"
-          ],
-          "LeaderType": "MountainMeat_Melee",
-          "PatrolSize": 2,
-          "MaxPatrols": 3,
-          "MaxPatrolsLimited": 3,
-          "PatrolCadence": 25.0,
-          "PatrolCadenceLimited": 25.0,
-          "IFFUsed": 1,
-          "SwarmPlayer": false,
-          "AssualtSpeed": "Walking",
-          "IsBoss": false,
-          "DropChance": 0.50,
-          "DropsHealth": true
-        },
-        {
-          "EnemyType": [
-            "RW_Rot"
-          ],
-          "LeaderType": "RW_Rot",
-          "PatrolSize": 2,
-          "MaxPatrols": 3,
-          "MaxPatrolsLimited": 3,
-          "PatrolCadence": 25.0,
-          "PatrolCadenceLimited": 25.0,
-          "IFFUsed": 3,
-          "SwarmPlayer": false,
-          "AssualtSpeed": "Walking",
-          "IsBoss": false,
-          "DropChance": 0.50,
-          "DropsHealth": true
-        }
-      ]
-    },
-    {
-      "NumOverrideTokensForHold": 8,
-      "MinSupplyPoints": 1,
-      "MaxSupplyPoints": 1,
-      "MinConstructors": 1,
-      "MaxConstructors": 1,
-      "MinPanels": 1,
-      "MaxPanels": 1,
-      "MinBoxesSpawned": 2,
-      "MaxBoxesSpawned": 5,
-      "MinTokensPerSupply": 0,
-      "MaxTokensPerSupply": 4,
-      "BoxTokenChance": 0.50,
-      "BoxHealthChance": 0.50,
-      "PossiblePanelTypes": [
-        "Recycler"
-      ],
-      "TakeChallenge": {
-        "TurretType": "SMG",
-        "EnemyType": "MountainMeat_Pistol",
-        "NumTurrets": 0,
-        "NumGuards": 3,
-        "IFFUsed": 1
-      },
-      "HoldPhases": [
-        {
-          "Encryptions": [
-            "Static"
-          ],
-          "MinTargets": 1,
-          "MaxTargets": 1,
-          "MinTargetsLimited": 1,
-          "MaxTargetsLimited": 1,
-          "EnemyType": [
-            "MountainMeat_Melee",
-            "MountainMeat_Pistol"
-          ],
-          "LeaderType": "MountainMeat_Pistol",
-          "MinEnemies": 3,
-          "MaxEnemies": 3,
-          "MaxEnemiesAlive": 6,
-          "MaxDirections": 1,
           "SpawnCadence": 20.0,
           "ScanTime": 90.0,
           "WarmupTime": 7.0,
-          "IFFUsed": 1,
+          "IFFUsed": 3,
           "GrenadeChance": 0.0,
           "GrenadeType": "Sosiggrenade_Flash",
           "SwarmPlayer": false
@@ -2057,218 +1081,29 @@
       ],
       "SupplyChallenge": {
         "TurretType": "SMG",
-        "EnemyType": "MountainMeat_Pistol",
-        "NumTurrets": 0,
-        "NumGuards": 3,
-        "IFFUsed": 1
-      },
-      "Patrols": [
-        {
-          "EnemyType": [
-            "MountainMeat_Melee",
-            "MountainMeat_Pistol"
-          ],
-          "LeaderType": "MountainMeat_Pistol",
-          "PatrolSize": 3,
-          "MaxPatrols": 3,
-          "MaxPatrolsLimited": 3,
-          "PatrolCadence": 25.0,
-          "PatrolCadenceLimited": 25.0,
-          "IFFUsed": 1,
-          "SwarmPlayer": false,
-          "AssualtSpeed": "Walking",
-          "IsBoss": false,
-          "DropChance": 0.50,
-          "DropsHealth": true
-        },
-        {
-          "EnemyType": [
-            "RW_Rot"
-          ],
-          "LeaderType": "RW_Floater",
-          "PatrolSize": 3,
-          "MaxPatrols": 3,
-          "MaxPatrolsLimited": 3,
-          "PatrolCadence": 25.0,
-          "PatrolCadenceLimited": 25.0,
-          "IFFUsed": 3,
-          "SwarmPlayer": false,
-          "AssualtSpeed": "Walking",
-          "IsBoss": false,
-          "DropChance": 0.50,
-          "DropsHealth": true
-        }
-      ]
-    },
-    {
-      "NumOverrideTokensForHold": 8,
-      "MinSupplyPoints": 1,
-      "MaxSupplyPoints": 1,
-      "MinConstructors": 1,
-      "MaxConstructors": 1,
-      "MinPanels": 1,
-      "MaxPanels": 1,
-      "MinBoxesSpawned": 2,
-      "MaxBoxesSpawned": 5,
-      "MinTokensPerSupply": 0,
-      "MaxTokensPerSupply": 4,
-      "BoxTokenChance": 0.50,
-      "BoxHealthChance": 0.50,
-      "PossiblePanelTypes": [
-        "Recycler"
-      ],
-      "TakeChallenge": {
-        "TurretType": "SMG",
-        "EnemyType": "MountainMeat_SMG",
-        "NumTurrets": 0,
-        "NumGuards": 3,
-        "IFFUsed": 1
-      },
-      "HoldPhases": [
-        {
-          "Encryptions": [
-            "Static"
-          ],
-          "MinTargets": 1,
-          "MaxTargets": 1,
-          "MinTargetsLimited": 1,
-          "MaxTargetsLimited": 1,
-          "EnemyType": [
-            "MountainMeat_Pistol"
-          ],
-          "LeaderType": "MountainMeat_SMG",
-          "MinEnemies": 4,
-          "MaxEnemies": 4,
-          "MaxEnemiesAlive": 8,
-          "MaxDirections": 2,
-          "SpawnCadence": 20.0,
-          "ScanTime": 90.0,
-          "WarmupTime": 7.0,
-          "IFFUsed": 1,
-          "GrenadeChance": 0.0,
-          "GrenadeType": "Sosiggrenade_Flash",
-          "SwarmPlayer": false
-        }
-      ],
-      "SupplyChallenge": {
-        "TurretType": "SMG",
-        "EnemyType": "MountainMeat_Pistol",
-        "NumTurrets": 0,
-        "NumGuards": 4,
-        "IFFUsed": 1
-      },
-      "Patrols": [
-        {
-          "EnemyType": [
-            "MountainMeat_Pistol"
-          ],
-          "LeaderType": "MountainMeat_SMG",
-          "PatrolSize": 4,
-          "MaxPatrols": 4,
-          "MaxPatrolsLimited": 4,
-          "PatrolCadence": 25.0,
-          "PatrolCadenceLimited": 25.0,
-          "IFFUsed": 1,
-          "SwarmPlayer": false,
-          "AssualtSpeed": "Walking",
-          "IsBoss": false,
-          "DropChance": 0.50,
-          "DropsHealth": true
-        },
-        {
-          "EnemyType": [
-            "RW_Rot"
-          ],
-          "LeaderType": "RW_Floater",
-          "PatrolSize": 4,
-          "MaxPatrols": 4,
-          "MaxPatrolsLimited": 4,
-          "PatrolCadence": 25.0,
-          "PatrolCadenceLimited": 25.0,
-          "IFFUsed": 3,
-          "SwarmPlayer": false,
-          "AssualtSpeed": "Walking",
-          "IsBoss": false,
-          "DropChance": 0.50,
-          "DropsHealth": true
-        }
-      ]
-    },
-    {
-      "NumOverrideTokensForHold": 9,
-      "MinSupplyPoints": 1,
-      "MaxSupplyPoints": 1,
-      "MinConstructors": 1,
-      "MaxConstructors": 1,
-      "MinPanels": 1,
-      "MaxPanels": 1,
-      "MinBoxesSpawned": 2,
-      "MaxBoxesSpawned": 5,
-      "MinTokensPerSupply": 0,
-      "MaxTokensPerSupply": 4,
-      "BoxTokenChance": 0.50,
-      "BoxHealthChance": 0.50,
-      "PossiblePanelTypes": [
-        "Recycler"
-      ],
-      "TakeChallenge": {
-        "TurretType": "SMG",
-        "EnemyType": "MountainMeat_Rifle",
+        "EnemyType": "RW_Rot",
         "NumTurrets": 0,
         "NumGuards": 5,
-        "IFFUsed": 1
-      },
-      "HoldPhases": [
-        {
-          "Encryptions": [
-            "Static"
-          ],
-          "MinTargets": 1,
-          "MaxTargets": 1,
-          "MinTargetsLimited": 1,
-          "MaxTargetsLimited": 1,
-          "EnemyType": [
-            "MountainMeat_Pistol",
-            "MountainMeat_SMG"
-          ],
-          "LeaderType": "MountainMeat_Rifle",
-          "MinEnemies": 5,
-          "MaxEnemies": 5,
-          "MaxEnemiesAlive": 10,
-          "MaxDirections": 2,
-          "SpawnCadence": 20.0,
-          "ScanTime": 120.0,
-          "WarmupTime": 7.0,
-          "IFFUsed": 1,
-          "GrenadeChance": 0.0,
-          "GrenadeType": "Sosiggrenade_Flash",
-          "SwarmPlayer": false
-        }
-      ],
-      "SupplyChallenge": {
-        "TurretType": "SMG",
-        "EnemyType": "MountainMeat_Rifle",
-        "NumTurrets": 0,
-        "NumGuards": 4,
-        "IFFUsed": 1
+        "IFFUsed": 3
       },
       "Patrols": [
         {
           "EnemyType": [
             "MountainMeat_Pistol",
-            "MountainMeat_SMG"
+            "MountainMeat_SMG",
+            "MountainMeat_Shotgun"
           ],
           "LeaderType": "MountainMeat_Rifle",
-          "PatrolSize": 5,
-          "MaxPatrols": 5,
-          "MaxPatrolsLimited": 5,
-          "PatrolCadence": 25.0,
-          "PatrolCadenceLimited": 25.0,
+          "PatrolSize": 4,
+          "MaxPatrols": 3,
+          "MaxPatrolsLimited": 3,
+          "PatrolCadence": 10.0,
+          "PatrolCadenceLimited": 10.0,
           "IFFUsed": 1,
           "SwarmPlayer": false,
           "AssualtSpeed": "Walking",
           "IsBoss": false,
-          "DropChance": 0.50,
+          "DropChance": 1.00,
           "DropsHealth": true
         },
         {
@@ -2276,23 +1111,23 @@
             "RW_Rot",
             "RW_Floater"
           ],
-          "LeaderType": "RW_Beefkicker",
-          "PatrolSize": 5,
-          "MaxPatrols": 5,
-          "MaxPatrolsLimited": 5,
-          "PatrolCadence": 25.0,
-          "PatrolCadenceLimited": 25.0,
+          "LeaderType": "RW_HamFister",
+          "PatrolSize": 4,
+          "MaxPatrols": 3,
+          "MaxPatrolsLimited": 3,
+          "PatrolCadence": 10.0,
+          "PatrolCadenceLimited": 10.0,
           "IFFUsed": 3,
           "SwarmPlayer": false,
           "AssualtSpeed": "Walking",
           "IsBoss": false,
-          "DropChance": 0.50,
+          "DropChance": 1.00,
           "DropsHealth": true
         }
       ]
     },
     {
-      "NumOverrideTokensForHold": 9,
+      "NumOverrideTokensForHold": 15,
       "MinSupplyPoints": 1,
       "MaxSupplyPoints": 1,
       "MinConstructors": 1,
@@ -2300,7 +1135,7 @@
       "MinPanels": 1,
       "MaxPanels": 1,
       "MinBoxesSpawned": 2,
-      "MaxBoxesSpawned": 5,
+      "MaxBoxesSpawned": 6,
       "MinTokensPerSupply": 0,
       "MaxTokensPerSupply": 4,
       "BoxTokenChance": 0.50,
@@ -2310,9 +1145,9 @@
       ],
       "TakeChallenge": {
         "TurretType": "SMG",
-        "EnemyType": "MountainMeat_SMG",
+        "EnemyType": "RWP_PacSquad_Trooper",
         "NumTurrets": 0,
-        "NumGuards": 6,
+        "NumGuards": 8,
         "IFFUsed": 1
       },
       "HoldPhases": [
@@ -2325,15 +1160,15 @@
           "MinTargetsLimited": 1,
           "MaxTargetsLimited": 1,
           "EnemyType": [
-            "MountainMeat_Pistol",
-            "MountainMeat_SMG",
-            "MountainMeat_Rifle"
+            "RWP_PacSquad_Flanker",
+            "RWP_PacSquad_Sniper",
+            "RWP_PacSquad_Trooper"
           ],
-          "LeaderType": "MountainMeat_Shotgun",
+          "LeaderType": "RWP_PacSquad_Commander",
           "MinEnemies": 6,
           "MaxEnemies": 6,
           "MaxEnemiesAlive": 12,
-          "MaxDirections": 3,
+          "MaxDirections": 4,
           "SpawnCadence": 20.0,
           "ScanTime": 120.0,
           "WarmupTime": 7.0,
@@ -2345,7 +1180,7 @@
       ],
       "SupplyChallenge": {
         "TurretType": "SMG",
-        "EnemyType": "MountainMeat_Shotgun",
+        "EnemyType": "RWP_PacSquad_Trooper",
         "NumTurrets": 0,
         "NumGuards": 4,
         "IFFUsed": 1
@@ -2353,218 +1188,21 @@
       "Patrols": [
         {
           "EnemyType": [
-            "MountainMeat_Pistol",
-            "MountainMeat_SMG",
-            "MountainMeat_Rifle"
-          ],
-          "LeaderType": "MountainMeat_Shotgun",
-          "PatrolSize": 5,
-          "MaxPatrols": 6,
-          "MaxPatrolsLimited": 6,
-          "PatrolCadence": 25.0,
-          "PatrolCadenceLimited": 25.0,
-          "IFFUsed": 1,
-          "SwarmPlayer": false,
-          "AssualtSpeed": "Walking",
-          "IsBoss": false,
-          "DropChance": 0.50,
-          "DropsHealth": true
-        },
-        {
-          "EnemyType": [
-            "RW_Rot",
-            "RW_Floater"
-          ],
-          "LeaderType": "RW_Beefkicker",
-          "PatrolSize": 5,
-          "MaxPatrols": 6,
-          "MaxPatrolsLimited": 6,
-          "PatrolCadence": 25.0,
-          "PatrolCadenceLimited": 25.0,
-          "IFFUsed": 3,
-          "SwarmPlayer": false,
-          "AssualtSpeed": "Walking",
-          "IsBoss": false,
-          "DropChance": 0.50,
-          "DropsHealth": true
-        }
-      ]
-    },
-    {
-      "NumOverrideTokensForHold": 10,
-      "MinSupplyPoints": 1,
-      "MaxSupplyPoints": 1,
-      "MinConstructors": 1,
-      "MaxConstructors": 1,
-      "MinPanels": 1,
-      "MaxPanels": 1,
-      "MinBoxesSpawned": 2,
-      "MaxBoxesSpawned": 5,
-      "MinTokensPerSupply": 0,
-      "MaxTokensPerSupply": 4,
-      "BoxTokenChance": 0.50,
-      "BoxHealthChance": 0.50,
-      "PossiblePanelTypes": [
-        "Recycler"
-      ],
-      "TakeChallenge": {
-        "TurretType": "SMG",
-        "EnemyType": "RW_Rot",
-        "NumTurrets": 0,
-        "NumGuards": 8,
-        "IFFUsed": 3
-      },
-      "HoldPhases": [
-        {
-          "Encryptions": [
-            "Static"
-          ],
-          "MinTargets": 1,
-          "MaxTargets": 1,
-          "MinTargetsLimited": 1,
-          "MaxTargetsLimited": 1,
-          "EnemyType": [
-            "RW_Rot",
-            "RW_Floater"
-          ],
-          "LeaderType": "RW_Beefkicker",
-          "MinEnemies": 7,
-          "MaxEnemies": 7,
-          "MaxEnemiesAlive": 14,
-          "MaxDirections": 3,
-          "SpawnCadence": 20.0,
-          "ScanTime": 180.0,
-          "WarmupTime": 7.0,
-          "IFFUsed": 3,
-          "GrenadeChance": 0.0,
-          "GrenadeType": "Sosiggrenade_Flash",
-          "SwarmPlayer": false
-        }
-      ],
-      "SupplyChallenge": {
-        "TurretType": "SMG",
-        "EnemyType": "RW_Rot",
-        "NumTurrets": 0,
-        "NumGuards": 6,
-        "IFFUsed": 3
-      },
-      "Patrols": [
-        {
-          "EnemyType": [
-            "MountainMeat_Pistol",
-            "MountainMeat_SMG",
-            "MountainMeat_Rifle"
-          ],
-          "LeaderType": "MountainMeat_Shotgun",
-          "PatrolSize": 3,
-          "MaxPatrols": 3,
-          "MaxPatrolsLimited": 3,
-          "PatrolCadence": 25.0,
-          "PatrolCadenceLimited": 25.0,
-          "IFFUsed": 1,
-          "SwarmPlayer": false,
-          "AssualtSpeed": "Walking",
-          "IsBoss": false,
-          "DropChance": 0.50,
-          "DropsHealth": true
-        },
-        {
-          "EnemyType": [
-            "RW_Rot",
-            "RW_Floater"
-          ],
-          "LeaderType": "RW_Beefkicker",
-          "PatrolSize": 5,
-          "MaxPatrols": 8,
-          "MaxPatrolsLimited": 8,
-          "PatrolCadence": 25.0,
-          "PatrolCadenceLimited": 25.0,
-          "IFFUsed": 3,
-          "SwarmPlayer": false,
-          "AssualtSpeed": "Walking",
-          "IsBoss": false,
-          "DropChance": 0.50,
-          "DropsHealth": true
-        }
-      ]
-    },
-    {
-      "NumOverrideTokensForHold": 10,
-      "MinSupplyPoints": 1,
-      "MaxSupplyPoints": 1,
-      "MinConstructors": 1,
-      "MaxConstructors": 1,
-      "MinPanels": 1,
-      "MaxPanels": 1,
-      "MinBoxesSpawned": 2,
-      "MaxBoxesSpawned": 5,
-      "MinTokensPerSupply": 0,
-      "MaxTokensPerSupply": 4,
-      "BoxTokenChance": 0.50,
-      "BoxHealthChance": 0.50,
-      "PossiblePanelTypes": [
-        "Recycler"
-      ],
-      "TakeChallenge": {
-        "TurretType": "SMG",
-        "EnemyType": "RWP_PacSquad_Trooper",
-        "NumTurrets": 0,
-        "NumGuards": 6,
-        "IFFUsed": 1
-      },
-      "HoldPhases": [
-        {
-          "Encryptions": [
-            "Static"
-          ],
-          "MinTargets": 1,
-          "MaxTargets": 1,
-          "MinTargetsLimited": 1,
-          "MaxTargetsLimited": 1,
-          "EnemyType": [
             "RWP_PacSquad_Flanker",
             "RWP_PacSquad_Sniper",
             "RWP_PacSquad_Trooper"
           ],
           "LeaderType": "RWP_PacSquad_Commander",
-          "MinEnemies": 7,
-          "MaxEnemies": 7,
-          "MaxEnemiesAlive": 14,
-          "MaxDirections": 4,
-          "SpawnCadence": 20.0,
-          "ScanTime": 180.0,
-          "WarmupTime": 7.0,
-          "IFFUsed": 1,
-          "GrenadeChance": 0.0,
-          "GrenadeType": "Sosiggrenade_Flash",
-          "SwarmPlayer": false
-        }
-      ],
-      "SupplyChallenge": {
-        "TurretType": "SMG",
-        "EnemyType": "RWP_PacSquad_Trooper",
-        "NumTurrets": 0,
-        "NumGuards": 5,
-        "IFFUsed": 1
-      },
-      "Patrols": [
-        {
-          "EnemyType": [
-            "RWP_PacSquad_Flanker",
-            "RWP_PacSquad_Sniper",
-            "RWP_PacSquad_Trooper"
-          ],
-          "LeaderType": "RWP_PacSquad_Commander",
-          "PatrolSize": 5,
-          "MaxPatrols": 8,
-          "MaxPatrolsLimited": 8,
-          "PatrolCadence": 25.0,
-          "PatrolCadenceLimited": 25.0,
+          "PatrolSize": 4,
+          "MaxPatrols": 4,
+          "MaxPatrolsLimited": 4,
+          "PatrolCadence": 10.0,
+          "PatrolCadenceLimited": 10.0,
           "IFFUsed": 1,
           "SwarmPlayer": false,
           "AssualtSpeed": "Walking",
           "IsBoss": false,
-          "DropChance": 0.50,
+          "DropChance": 1.00,
           "DropsHealth": true
         },
         {
@@ -2572,17 +1210,35 @@
             "RW_Rot",
             "RW_Floater"
           ],
-          "LeaderType": "RW_Beefkicker",
-          "PatrolSize": 5,
-          "MaxPatrols": 8,
-          "MaxPatrolsLimited": 8,
-          "PatrolCadence": 25.0,
-          "PatrolCadenceLimited": 25.0,
+          "LeaderType": "RW_HamFister",
+          "PatrolSize": 4,
+          "MaxPatrols": 2,
+          "MaxPatrolsLimited": 2,
+          "PatrolCadence": 10.0,
+          "PatrolCadenceLimited": 10.0,
           "IFFUsed": 3,
           "SwarmPlayer": false,
           "AssualtSpeed": "Walking",
           "IsBoss": false,
-          "DropChance": 0.50,
+          "DropChance": 1.00,
+          "DropsHealth": true
+        }
+        ,
+        {
+          "EnemyType": [
+            "RW_Rot"
+          ],
+          "LeaderType": "RW_RedLumberjack",
+          "PatrolSize": 1,
+          "MaxPatrols": 1,
+          "MaxPatrolsLimited": 1,
+          "PatrolCadence": 10.0,
+          "PatrolCadenceLimited": 10.0,
+          "IFFUsed": 3,
+          "SwarmPlayer": false,
+          "AssualtSpeed": "Walking",
+          "IsBoss": false,
+          "DropChance": 1.00,
           "DropsHealth": true
         }
       ]
